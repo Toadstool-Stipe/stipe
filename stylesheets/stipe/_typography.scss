@@ -32,7 +32,6 @@ $line_height: #{$line / $em}em;
 // individual element styling will be addressed in element name spaced SCSS files
 // *-------------------------------------------------------------------------------
 
-@import "typography/default";
 @import "typography/functions";
 @import "typography/mixins";
 @import "typography/extends";
