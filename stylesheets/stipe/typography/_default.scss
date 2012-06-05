@@ -1,3 +1,5 @@
+/* typography defauts */
+
 html {
 	font: #{$font_size / 16 * 1em}/$line_height $primary_font_family;
 	color: $primary_text;
