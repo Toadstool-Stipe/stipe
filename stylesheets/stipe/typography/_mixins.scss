@@ -8,67 +8,21 @@
 //@import "../config_files/text";
 
 
-//////// heading text mixins //////////
+//////// heading text mixin //////////
 // ------------------------------------------------
-@mixin heading ($heading_font_size: $heading_1, $family: $primary_font_family, $line_height: 1em, $color: $primary_header_color, $font_weight: normal, $letter_spacing: 0, $margin_bottom: 20) {
+@mixin heading ($heading_font_size: $heading_1, $family: $heading_font_family, $color: $primary_header_color, $font_weight: normal) {
 	font-size: #{$heading_font_size / $em}em;
 	color: $color;
-	line-height: $line_height;
+	line-height: #{($line / $heading_font_size) * ceil($heading_font_size / $line)}em;
+	margin-bottom: #{$line / $heading_font_size}em;
 	font-weight: $font_weight;
-	margin-bottom: #{$margin_bottom / $heading_font_size}em;
 	font-family: $family;
-	letter-spacing: $letter_spacing;
 }
 
 
-@mixin subheader ($font_size: $heading_4, $background: $charlie_gray, $color: $alpha_gray) {
-	@include heading($heading_font_size: $font_size, $family: $heading_font_family, $line_height: 2em, $color: $color);
-	background: $background;
-	@include border_radius(#{3 / $font_size}em);
-	text-indent: #{10 / $font_size}em;
-}
-
-//////// heading text mixins //////////
-
-
-//////// standard text mixins //////////
-// ------------------------------------------------
-
-
-@mixin small ($margin: auto, $baseline_size: $small_point_size) {
-	@include text_baseline($margin, $baseline_size);
-}
-
-@mixin medium ($margin: auto, $baseline_size: $font_size) {
-	@include text_baseline($margin, $baseline_size);
-}
-
-@mixin large ($margin: auto, $baseline_size: $large_point_size) {
-	@include text_baseline($margin, $baseline_size);
-}
-
-//////// standard text mixins //////////
-
-
-
-//////// text with background color mixins //////////
-// --------------------------------------------------
-
-@mixin bkg_text ($background: #fff, $text_color: #313131, $href: #1199dd){
-	background-color: $background;
-	color: $text_color;
-	a {
-		color: $href;
-	}
-}
-
-// --------------------------------------------------
-//////// text with background color mixins //////////
-
-
-/////// text arguments //////////
-// -----------------------------
-@mixin text_baseline ($margin, $baseline_size) {
+/////// text arguments w/baseline rythem //////////
+// -----------------------------------------------------
+@mixin text ($baseline_size, $margin: auto) {
 	font-size: #{$baseline_size / $em}em;
 	line-height: #{($line / $baseline_size) * ceil($baseline_size / $line)}em;
 
@@ -80,6 +34,25 @@
 	}
 }
 /////// text arguments //////////
+
+//////// standard text mixins //////////
+// ------------------------------------------------
+
+
+@mixin small ($baseline_size: $small_point_size) {
+	@include text($baseline_size);
+}
+
+@mixin medium ($baseline_size: $font_size) {
+	@include text($baseline_size);
+}
+
+@mixin large ($baseline_size: $large_point_size) {
+	@include text($baseline_size);
+}
+
+//////// standard text mixins //////////
+
 
 
 

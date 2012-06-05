@@ -7,7 +7,7 @@
 //* Text classes */
 //* ------------ */
 %headings_1 {
-	@include heading($heading_font_size: $heading_1, $family: $primary_font_family, $letter_spacing: -1px, $margin_bottom: 10);
+	@include heading();
 }
 
 %headings_2 {
@@ -20,18 +20,6 @@
 
 %headings_4 {
 	@include heading($heading_font_size: $heading_4);
-}
-
-%subheader_alpha {
-	@include subheader($color: $white);
-}
-
-%subheader_bravo {
-	@include subheader($color: $charlie_gray, $background: $echo_gray);
-}
-
-%subheader_charlie {
-	@include subheader($background: $echo_gray);
 }
 
 
@@ -68,18 +56,6 @@
 
 
 
-
-//* text-transform objects */
-//* ---------------------- */
-%uppercase {
-//	@include uppercase;
-}
-%lowercase {
-//	@include lowercase;
-}
-%capitalize {
-//	@include capitalize;
-}
 
 //* Hide Text, Kellum Method */
 //* ------------------------ */
