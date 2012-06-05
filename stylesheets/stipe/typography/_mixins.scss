@@ -10,11 +10,11 @@
 
 //////// heading text mixin //////////
 // ------------------------------------------------
-@mixin heading ($heading_font_size: $heading_1, $family: $heading_font_family, $color: $primary_header_color, $font_weight: normal) {
-	font-size: #{$heading_font_size / $em}em;
+@mixin heading ($baseline_size: $heading_1, $family: $heading_font_family, $color: $primary_header_color, $font_weight: normal) {
+	font-size: em($baseline_size);
+	line-height: baseline($baseline_size);
+	margin-bottom: baseline-margin($baseline_size);
 	color: $color;
-	line-height: #{($line / $heading_font_size) * ceil($heading_font_size / $line)}em;
-	margin-bottom: #{$line / $heading_font_size}em;
 	font-weight: $font_weight;
 	font-family: $family;
 }
@@ -23,22 +23,21 @@
 /////// text arguments w/baseline rythem //////////
 // -----------------------------------------------------
 @mixin text ($baseline_size, $margin: auto) {
-	font-size: #{$baseline_size / $em}em;
-	line-height: #{($line / $baseline_size) * ceil($baseline_size / $line)}em;
+	font-size: em($baseline_size);
+	line-height: baseline($baseline_size);
 
 	@if $margin == auto {
-		margin-bottom: #{$line / $baseline_size}em;
+		margin-bottom: baseline-margin($baseline_size);
 	}
 	@else if $margin == 0 {
 		margin-bottom: 0;
 	}
 }
-/////// text arguments //////////
+
+
 
 //////// standard text mixins //////////
 // ------------------------------------------------
-
-
 @mixin small ($baseline_size: $small_point_size) {
 	@include text($baseline_size);
 }
@@ -51,8 +50,6 @@
 	@include text($baseline_size);
 }
 
-//////// standard text mixins //////////
-
 
 
 
@@ -61,7 +58,7 @@
 @mixin bulleted_list {
 	ul {
 		list-style: disc;
-		margin: 0 0 1.5em #{20 / $em}em;
+		margin: 0 0 1.5em em(20);
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -74,4 +71,3 @@
 		}
 	}
 }
-////////// Standard bulleted list //////////////

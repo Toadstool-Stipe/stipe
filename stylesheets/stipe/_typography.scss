@@ -8,6 +8,8 @@ $heading_1:             46 !default;
 $heading_2:             32 !default;
 $heading_3:             28 !default;
 $heading_4:             18 !default;
+$heading_5:             18 !default;
+$heading_6:             18 !default;
 
 $small_point_size:      10 !default;
 $large_point_size:      14 !default;
@@ -31,5 +33,6 @@ $line_height: #{$line / $em}em;
 // *-------------------------------------------------------------------------------
 
 @import "typography/default";
+@import "typography/functions";
 @import "typography/mixins";
 @import "typography/extends";

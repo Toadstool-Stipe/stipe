@@ -24,11 +24,13 @@ h4 {
 }
 
 h5 {
- //font-size:  0.83em;  // user agent default
+	//font-size:  0.83em;  // user agent default
+	@extend %headings_5;
 }
 
 h6 {
- //font-size:  0.75em;  // user agent default
+	 //font-size:  0.75em;  // user agent default
+	 @extend %headings_6;
 }
 
 // Standard body text support
