@@ -1,0 +1,54 @@
+// Zocial full (paid), Sorted A-Z
+
+%zocial_font                       { font-family: 'zocial'; }
+
+%zocial-amazon:before              { content: "a"; @extend %zocial_font; }
+%zocial-android:before             { content: "&"; @extend %zocial_font; }
+%zocial-aol:before                 { content: "\""; @extend %zocial_font; }
+%zocial-appstore:before            { content: "^"; @extend %zocial_font; }
+%zocial-chrome:before              { content: "["; @extend %zocial_font; }
+%zocial-cloudapp:before            { content: "c"; @extend %zocial_font; }
+%zocial-creativecommons:before     { content: "C"; @extend %zocial_font; }
+%zocial-disqus:before              { content: "Q"; @extend %zocial_font; }
+%zocial-dribbble:before            { content: "D"; @extend %zocial_font; }
+%zocial-dropbox:before             { content: "d"; @extend %zocial_font; }
+%zocial-eventasaurus:before        { content: "v"; @extend %zocial_font; }
+%zocial-eventbrite:before          { content: "|"; @extend %zocial_font; }
+%zocial-evernote:before            { content: "E"; @extend %zocial_font; }
+%zocial-facebook:before            { content: "f"; @extend %zocial_font; }
+%zocial-flattr:before              { content: "%"; @extend %zocial_font; }
+%zocial-forrst:before              { content: ":"; @extend %zocial_font; }
+%zocial-foursquare:before          { content: "4"; @extend %zocial_font; }
+%zocial-github:before              { content: "g"; @extend %zocial_font; }
+%zocial-gmail:before               { content: "m"; @extend %zocial_font; }
+%zocial-google:before              { content: "G"; @extend %zocial_font; }
+%zocial-googleplus:before          { content: "+"; @extend %zocial_font; }
+%zocial-gowalla:before             { content: "@"; @extend %zocial_font; }
+%zocial-guest:before               { content: "?"; @extend %zocial_font; }
+%zocial-html5:before               { content: "5"; @extend %zocial_font; }
+%zocial-ie:before                  { content: "6"; @extend %zocial_font; }
+%zocial-instapaper:before          { content: "I"; @extend %zocial_font; }
+%zocial-intensedebate:before       { content: "{"; @extend %zocial_font; }
+%zocial-itunes:before              { content: "A"; @extend %zocial_font; }
+%zocial-lastfm:before              { content: "l"; @extend %zocial_font; }
+%zocial-linkedin:before            { content: "L"; @extend %zocial_font; }
+%zocial-meetup:before              { content: "M"; @extend %zocial_font; }
+%zocial-openid:before              { content: "o"; @extend %zocial_font; }
+%zocial-paypal:before              { content: "$"; @extend %zocial_font; }
+%zocial-plancast:before            { content: "P"; @extend %zocial_font; }
+%zocial-posterous:before           { content: "~"; @extend %zocial_font; }
+%zocial-rss:before                 { content: "R"; @extend %zocial_font; }
+%zocial-scribd:before              { content: "}"; @extend %zocial_font; }
+%zocial-skype:before               { content: "S"; @extend %zocial_font; }
+%zocial-smashingmag:before         { content: "*"; @extend %zocial_font; }
+%zocial-songkick:before            { content: "k"; @extend %zocial_font; }
+%zocial-soundcloud:before          { content: "s"; @extend %zocial_font; }
+%zocial-spotify:before             { content: "%zocial-"; @extend %zocial_font; }
+%zocial-tumblr:before              { content: "t"; @extend %zocial_font; }
+%zocial-twitter:before             { content: "T"; @extend %zocial_font; }
+%zocial-vimeo:before               { content: "V"; @extend %zocial_font; }
+%zocial-wikipedia:before           { content: ","; @extend %zocial_font; }
+%zocial-wordpress:before           { content: "w"; @extend %zocial_font; }
+%zocial-yahoo:before               { content: "Y"; @extend %zocial_font; }
+%zocial-yelp:before                { content: "y"; @extend %zocial_font; }
+%zocial-youtube:before             { content: "U"; @extend %zocial_font; }
