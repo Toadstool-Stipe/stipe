@@ -32,6 +32,10 @@
 	@include grid(7);
 }
 
+%grid_12_8 {
+	@include grid(8);
+}
+
 %grid_12_9 {
 	@include grid(9);
 }

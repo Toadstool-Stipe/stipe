@@ -18,6 +18,10 @@
 	@include standard_rounded_border;
 }
 
+%box_sizing {
+	@include box_sizing;
+}
+
 // Standardized uses for box and text shadows //
 //* text shadows */
 //* ------------ */
