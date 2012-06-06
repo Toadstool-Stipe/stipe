@@ -5,7 +5,7 @@
 	
 	$col_gutter_width: ($col_count - 1) * $col_gutter + ($col_count * $col_width); //determines full col width with gutters
 	
-	$grid_context_width: $grid_context * 80; // determines 
+	$grid_context_width: $grid_context * 80; // determines width of contextual grid block for calculating percentages 
 	
 	@include grid_placement($grid_align, $grid_uom, $grid_child, $margin: $col_gutter / 2);
 	
