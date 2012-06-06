@@ -18,6 +18,14 @@
 	}
 }
 
+/////////// main content dusplay box //////////////
+// -----------------------------------------------
+@mixin full_width_block($main_col_count, $main_grid_align: center, $main_grid_uom: percent) {
+	$col_count: $main_col_count + 0.25;  // additional value compensates for not having 10px margin
+	@include grid($col_count, $grid_align: $main_grid_align, $grid_uom: $main_grid_uom);
+}
+
+
 ///////// prefix value accounts for a full column in the grid ////////////
 // -----------------------------------------------------------------------
 @mixin prefix($grid_type, $col_count, $grid_uom: $grid_uom, $move: prefix) {

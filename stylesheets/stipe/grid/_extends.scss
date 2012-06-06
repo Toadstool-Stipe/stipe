@@ -48,12 +48,12 @@
 	@include grid(12,12);
 }
 
-%grid_16_6 {
-	@include grid(16,6);
+%grid_full {
+	@include full_width_block(12, $main_grid_align: left);
 }
 
-%grid_16_12 {
-	@include grid(16,12);
+%grid_full_center {
+	@include full_width_block(12);
 }
 
 // push ----------------------
@@ -72,27 +72,56 @@
 
 // suffix ----------------------
 
+%suffix_12_1 {
+	@include suffix(12,1);
+}
+
+%suffix_12_2 {
+	@include suffix(12,2);
+}
+
 %suffix_12_3 {
 	@include suffix(12,3);
 }
 
 // prefix ----------------------
 
+%prefix_12_1 {
+	@include prefix(12,1);
+}
+
+%prefix_12_2 {
+	@include prefix(12,2);
+}
+
 %prefix_12_3 {
 	@include prefix(12,3);
 }
 
+
 // push ----------------------
+
+%push_12_1 {
+	@include push(12,1);
+}
+
+%push_12_2 {
+	@include push(12,2);
+}
 
 %push_12_3 {
 	@include push(12,3);
 }
 
-%push_12_5 {
-	@include push(12,5);
+// pull ----------------------
+
+%pull_12_1 {
+	@include pull(12,1);
 }
 
-// pull ----------------------
+%pull_12_2 {
+	@include pull(12,2);
+}
 
 %pull_12_3 {
 	@include pull(12,3);
