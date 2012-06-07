@@ -1,26 +1,13 @@
-//
-// Standardized abstract gradient color objects.  NOT to be used as classes appended to a block in the HTML.
-// Preferred uses include @extend .class; or repurpose the mixin within the class.
-//
+// Default display Stipe buttons
+// ---------------------------------------------------------
 
-//* primary buttons */
-//* --------------- */
-%primary_button_color {
-	@include alpha_color_gradient;
-}
-
-%primary_button_hover {
-	@include beta_color_gradient;
-}
-
-%primary_button_active {
-	@include charlie_button_active;
-}
-
-%primary_button_border_color {
-	background-color: $primary_button_border_color;
-}
-
-%primary_button_border {
-	border: 1px solid $primary_button_border_color;
+%stipe_buttons {
+	@extend %minimal;
+	margin-right: em(10);
+	&:last-child {
+		margin: 0;
+	}
+	&:nth-child(n+2) {
+		@extend %cupid-green;
+	}
 }

@@ -171,6 +171,10 @@ button {
 	overflow: visible;
 }
 
+a.button {
+	display: inline-block;
+}
+
 // * scale images in IE7 more attractively
 
 .ie7 img {

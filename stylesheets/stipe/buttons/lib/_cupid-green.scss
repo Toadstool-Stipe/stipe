@@ -1,0 +1,54 @@
+$cupid_background: #7fbf4d !default;
+$cupid_gradient: $cupid_background 0%, #63a62f 100% !default;
+$cupid_background_hover: darken($cupid_background, 4) !default;
+$cupid_gradient_hover: $cupid_background_hover 0%, #5e9e2e 100% !default;
+$cupid_border_color: #63a62f #63a62f #5b992b #63a62f !default;
+$cupid_border_radius: em(3) !default;
+$cupid_inset_box_shadow: #96ca6d !default;
+$cupid_inset_box_shadow_hover: #8dbf67 !default;
+$cupid_inset_box_shadow_active: #548c29 !default;
+$cupid_text_color: #fff !default;
+$cupid_text_weight: bold !default;
+$cupid_font_family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !default;
+$cupid_font_size: em(12) !default;
+$cupid_padding: em(7) 0 em(8) 0 !default;
+$cupid_text_shadow_color: #4c9021 !default; 
+$cupid_width: em(150) !default;
+
+%cupid-green {
+  @include linear_gradient_w3c ($cupid_background, #{$cupid_gradient});
+  border-width: 1px;
+  border-style: solid;
+  border-color: $cupid_border_color;
+  @include border_radius($cupid_border_radius);
+  @include box_shadow(inset 0 1px 0 0, $cupid_inset_box_shadow);
+  color: $cupid_text_color;
+  font: $cupid_text_weight $cupid_font_size #{$cupid_font_family};
+  line-height: 1em;
+  padding: $cupid_padding;
+  text-align: center;
+  text-shadow: 0 -1px 0 $cupid_text_shadow_color;
+  width: $cupid_width; 
+  &:hover {
+	  @include linear_gradient_w3c ($cupid_background_hover, #{$cupid_gradient_hover});
+    @include box_shadow(inset 0 1px 0 0, $cupid_inset_box_shadow_hover);
+    cursor: pointer;
+  }
+  &:active {
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: darken(nth($cupid_border_color, 4), 5);
+	  @include box_shadow(inset 0 0 8px 4px, $cupid_inset_box_shadow_active);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

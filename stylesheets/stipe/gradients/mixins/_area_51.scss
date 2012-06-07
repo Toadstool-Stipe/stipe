@@ -18,8 +18,7 @@
 // @include linear_gradient_w3c ($alpha_color, #{$alpha_color 0%,$bravo_color 100%}); 
 // ---------------------------------------------------------------------------------------
 @mixin linear_gradient_w3c ($default_color, $color_values, $prefixes: $prefix_defaults) {
-	// default fallback //
-	background: $default_color;
+	background: $default_color; // default fallback
 	background: -webkit-linear-gradient(top, $color_values);
 	background: -moz-linear-gradient(top, $color_values);
 	background: -o-linear-gradient(top, $color_values);
