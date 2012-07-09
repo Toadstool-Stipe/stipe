@@ -1,0 +1,6 @@
+.main_content {
+	@include grid(12, $grid_align: center, $grid_uom: em);
+	@media #{$mobile} {
+		@include full_width_block(12);
+	}
+}

@@ -2,7 +2,7 @@
 // 'grid_placement' sets display, float and margin for the block
 @mixin grid_placement($grid_align, $grid_uom, $grid_child, $margin) {
 	
-	@extend %box_sizing;
+	@include box_sizing;
 	
 	@if $grid_align == center {
 		margin: 0 auto;
