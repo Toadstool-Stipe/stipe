@@ -1,0 +1,58 @@
+// Grid background for column view
+// @import "stipe/grid/grid_background";
+
+
+///////// global //////////
+
+h1 {
+	color: $alpha_color;
+}
+
+.background_image {
+	background: url(#{$imgDir}app.png);
+}
+
+.extending_colors {
+	@extend %white;
+}
+
+// grid example
+// ------------------------------------------------------
+
+// establish a 100% width block that floats center
+.main_content {
+	@extend %grid_full_center;
+}
+
+// establish main aside within the main contnet block
+.main_aside {
+	@include grid(4, $grid_padding_lr: 10, $grid_padding_tb: 10, $grid_border: 1);
+}
+
+// stablish main article within the main content block
+.main_section {
+	@extend %grid_12_8; 
+	.section_header {
+		@include grid(8.25, alphaomega, $grid_context: 8);
+		margin-bottom: em(20);
+	}
+	.section_aside {
+		@include grid(2, alpha, $grid_context: 8);
+	}
+	.section_article {
+		@include grid(6, omega, $grid_context: 8);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
