@@ -1,0 +1,19 @@
+.toadstool_main_header {
+	@include box_shadow(0 0 10px, $shadow_color);
+	margin-bottom: 2em;
+	@extend %clearfix;
+	h1 {
+		color: $white;
+		float: left;
+		margin-bottom: 0;
+	}
+	background: $bravo_gray;
+	padding: rem(10);
+	form {
+		display: inline-block;
+		float: right;
+		select {
+			min-width: rem(100);
+		}
+	}
+}

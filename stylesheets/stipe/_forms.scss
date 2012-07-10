@@ -1,4 +1,6 @@
 // form colors
+$alert_background_color:        $alpha_color !default;
+
 $input_disabled:                $bravo_gray !default;
 $input_disabled_bkg:            lighten($input_disabled, 75%) !default;
 $input_disabled_border:         lighten($input_disabled, 50%) !default;
