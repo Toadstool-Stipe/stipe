@@ -5,8 +5,101 @@
 		@include grid(12, $grid_align: center, $grid_uom: em);
 		@media #{$mobile} {
 			@include grid(12, $grid_align: center);
-			//@include full_width_block(12);
-			//padding: 0 em(10);
 		}
 	}
+}
+
+
+
+
+
+
+
+///////////// prettify styles //////////////////
+// ----------------------------------------
+// *
+// * Derived from einaros's Sons of Obsidian theme at
+// * http://studiostyl.es/schemes/son-of-obsidian by
+// * Alex Ford of CodeTunnel:
+// * http://CodeTunnel.com/blog/post/71/google-code-prettify-obsidian-theme
+// *
+
+.str
+{
+    color: #EC7600;
+}
+.kwd
+{
+    color: #9763C7;
+}
+.com
+{
+    color: #93C763;
+}
+.typ
+{
+    color: #678CB1;
+}
+.lit
+{
+    color: #FACD22;
+}
+.pun
+{
+    color: #F1F2F3;
+}
+.pln
+{
+    color: #F1F2F3;
+}
+.tag
+{
+    color: #8AC763;
+}
+.atn
+{
+    color: #E0E2E4;
+}
+.atv
+{
+    color: #EC7600;
+}
+.dec
+{
+    color: purple;
+}
+pre.prettyprint
+{
+    border: 0px solid #888;
+    font-size: #{14 / $em}em;
+}
+ol.linenums
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.prettyprint {
+    background: #252525;
+    @include border_radius(em(5));
+    padding: em(10) 0 0 em(20);
+    margin-bottom: em(20);
+    @include grid(6.125);
+    line-height: 1.5em;
+    &:nth-of-type(odd) {
+	    margin-left: 0;
+    }
+    &:nth-of-type(even) {
+	    margin-right: 0;
+    }
+    @media #{$mobile} {
+	    @include grid(12.25, $grid_child: alphaomega);
+	    padding-right: em(10);
+    }
+}
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9
+{
+    color: #555;
+}
+li.L1, li.L3, li.L5, li.L7, li.L9 {
+    background: #3F3F3F;
 }
