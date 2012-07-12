@@ -17,3 +17,17 @@
 		}
 	}
 }
+
+.toadstool_header {
+	
+}
+
+.toadstool_subheader {
+	h2 {
+		margin-bottom: 0;
+	}
+	p {
+		color: $charlie_gray;
+		@include text(14);
+	}
+}

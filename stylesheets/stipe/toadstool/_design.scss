@@ -6,8 +6,33 @@
 		@media #{$mobile} {
 			@include grid(12, $grid_align: center);
 		}
+		section {
+			clear: both;
+			&:nth-of-type(1n+2) {
+				border-top: 1px dotted;
+				padding-top: em(20);
+			}
+		}
 	}
+	.element_example {
+		margin-bottom: em(20);
+	}
+
 }
+
+// .toadstool_header {
+// 	float: right;
+// 	@media #{$mobile} {
+// 		float: none;
+// 	}
+// }
+
+code {
+	border: 1px solid;
+	padding: em(2) em(5);
+}
+
+
 
 
 
@@ -70,20 +95,23 @@
 }
 pre.prettyprint
 {
-    border: 0px solid #888;
-    font-size: #{14 / $em}em;
+    font-size: em(14);
+    @media #{$mobile} {
+	    font-size: em(14);
+    }
 }
 ol.linenums
 {
     margin-top: 0;
     margin-bottom: 0;
 }
-.prettyprint {
-    background: #252525;
+.example_code {
+    background: $alpha_gray;
     @include border_radius(em(5));
-    padding: em(10) 0 0 em(20);
+    padding: em(10) em(10) 0 em(20);
     margin-bottom: em(20);
     @include grid(6.125);
+    //@include grid(12.25, $grid_child: alphaomega);
     line-height: 1.5em;
     &:nth-of-type(odd) {
 	    margin-left: 0;
@@ -95,7 +123,21 @@ ol.linenums
 	    @include grid(12.25, $grid_child: alphaomega);
 	    padding-right: em(10);
     }
+    p {
+	    color: $fox_gray;
+	    float: right;
+	    margin: em(10) em(10) em(5) 0;
+	    @media #{$mobile} {
+		    margin-right: 0;
+	    }
+    }
 }
+
+.instructional_example {
+	@extend .example_code;
+	background: transparent;
+}
+
 li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9
 {
     color: #555;
