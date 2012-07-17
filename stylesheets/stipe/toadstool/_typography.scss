@@ -36,6 +36,7 @@ html {
 	h1 {
 		// font-size: 2em;  // user agent default
 		@extend %headings_1;
+		//margin-top: rem(24);
 	}
 	h2 {
 		// font-size: 1.5em;  // user agent default
