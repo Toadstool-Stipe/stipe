@@ -10,7 +10,7 @@
 		}
 	}
 	background: $bravo_gray;
-	padding: rem(10);
+	padding: rem(10) rem(10) rem(15) rem(10);
 	form {
 		display: inline-block;
 		float: right;
@@ -25,16 +25,21 @@
 			float: none;
 		}
 	}
-	button {
+	.nav_toggle {
 		float: right;
 		display: none;
 		@media #{$mobile} {
 			display: block;
 			width: auto;
-			font-weight: bold;
-			padding-left: em(5);
-			padding-right: em(5);
-			line-height: em(20);
+			padding: em(10) em(5) em(5) em(5);
+			font-weight: normal;
+			span {
+				&:after {
+					content: "\f00b"; 
+					font-family: 'FontAwesome';
+					font-size: 2em;
+				}
+			}
 		}
 	}
 }

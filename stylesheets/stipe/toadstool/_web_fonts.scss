@@ -14,8 +14,8 @@ $webfont_directory: "/fonts/" !default; // edit this directory in the '_config.s
 // @import "stipe/typography/web_fonts/zocial_characters";
 
 // To activate 'font_awesome' uncomment both lines
-// @import "stipe/typography/web_fonts/font_awesome";
-// @import "stipe/typography/web_fonts/font_awesome_pua";
+@import "stipe/typography/web_fonts/font_awesome";
+@import "stipe/typography/web_fonts/font_awesome_pua";
 
 
 
