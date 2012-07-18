@@ -34,14 +34,11 @@ html {
 
 [class*="toadstool"] {
 	h1 {
-		// font-size: 2em;  // user agent default
 		@extend %headings_1;
-		//margin-top: rem(24);
+		font-weight: bold;
 	}
 	h2 {
-		// font-size: 1.5em;  // user agent default
 		@extend %headings_2;
-		font-family: $secondary_heading_font_family;
 		color: $alpha_primary;
 	}
 }
