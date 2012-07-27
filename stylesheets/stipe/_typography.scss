@@ -20,6 +20,14 @@ $primary_font_family: #{Arial, sans-serif} !default;
 $secondary_font_family: #{"Helvetica Neue", Arial, sans-serif} !default;
 $heading_font_family: #{"Helvetica Neue", Arial, sans-serif} !default;
 
+$icon_font_alpha: #{'FontAwesome'} !default;
+$icon_font_bravo: #{'zocial'} !default;
+
+// Headings default arguments
+$heading_size: $heading_1 !default;
+$heading_font_family: $heading_font_family !default;
+$heading_color: $primary_header_color !default;
+$heading_font_weight: normal !default;
 
 //// !do not edit! ////
 $em:          $font_size; // $em ALWAYS == $font-size

@@ -10,13 +10,13 @@
 
 //////// heading text mixin //////////
 // ------------------------------------------------
-@mixin heading ($baseline_size: $heading_1, $family: $heading_font_family, $color: $primary_header_color, $font_weight: normal) {
-	font-size: em($baseline_size);
-	line-height: baseline($baseline_size);
-	margin-bottom: baseline-margin($baseline_size);
-	color: $color;
-	font-weight: $font_weight;
-	font-family: $family;
+@mixin heading ($heading_size, $heading_font_family, $heading_color, $heading_font_weight) {
+	font-size: em($heading_size);
+	line-height: baseline($heading_size);
+	margin-bottom: baseline-margin($heading_size);
+	color: $heading_color;
+	font-weight: $heading_font_weight;
+	font-family: $heading_font_family;
 }
 
 

@@ -23,6 +23,9 @@ $heading_2: 24;
 // $secondary_font_family: #{"Helvetica Neue", Arial, sans-serif};
 $heading_font_family: #{'Lato', sans-serif};
 
+// $icon_font_alpha: #{'FontAwesome'};
+// $icon_font_bravo: #{'zocial'};
+
 
 ///// Default webfont directory /////
 // -----------------------------------------------------------------------------
@@ -207,7 +210,13 @@ $iblur:                                3;                // inset blur settings
 // $mobile_landscape:	        "screen and (max-width: 30em) and (orientation : landscape)"; 
 
 
-
+// Compass function for creating grid background
+// -----------------------------------------------------------------------------
+@import "compass/layout/grid-background";
+$grid-background-total-columns: 12;
+$grid-background-column-width: 60px;
+$grid-background-gutter-width: 20px;
+$grid-background-column-color: scale-color($echo_primary,$lightness:80%);
 
 
 

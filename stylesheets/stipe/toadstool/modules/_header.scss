@@ -4,10 +4,6 @@
 		color: $white;
 		float: left;
 		margin-bottom: 0;
-		@media #{$mobile} {
-			//width: 100%;
-			//margin-bottom: .5em;
-		}
 	}
 	background: $bravo_gray;
 	padding: rem(10) rem(10) rem(15) rem(10);
@@ -36,7 +32,7 @@
 			span {
 				&:after {
 					content: "\f00b"; 
-					font-family: 'FontAwesome';
+					font-family: $icon_font_alpha;
 					font-size: 2em;
 				}
 			}
@@ -54,8 +50,9 @@
 	h2 {
 		margin-bottom: 0;
 	}
-	p {
-		color: $charlie_gray;
-		@include text(14);
-	}
 }
+
+
+
+
+

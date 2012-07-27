@@ -41,6 +41,10 @@ html {
 		@extend %headings_2;
 		color: $alpha_primary;
 	}
+	p {
+		color: $charlie_gray;
+		@include text(14);
+	}
 }
 
 

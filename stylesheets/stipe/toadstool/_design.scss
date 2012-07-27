@@ -5,6 +5,10 @@
 		@include grid(12, $grid_align: center, $grid_uom: em);
 		@media #{$mobile} {
 			@include grid(12, $grid_align: center);
+			article {
+				width: 100%;
+				margin: 0;
+			}
 		}
 		section {
 			clear: both;
@@ -16,8 +20,13 @@
 	}
 	.element_example {
 		margin-bottom: em(20);
+		@include column-grid-background;
 	}
 
+}
+
+.hidden {
+	display: none;
 }
 
 .mobi_hidden {
@@ -27,6 +36,7 @@
 }
 
 code {
-	border: 1px solid;
+	//border: 1px solid;
 	padding: em(2) em(5);
+	background: $charlie_color_hotel;
 }
