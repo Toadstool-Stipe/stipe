@@ -212,11 +212,12 @@ $iblur:                                3;                // inset blur settings
 
 // Compass function for creating grid background
 // -----------------------------------------------------------------------------
-@import "compass/layout/grid-background";
-$grid-background-total-columns: 12;
-$grid-background-column-width: 60px;
-$grid-background-gutter-width: 20px;
-$grid-background-column-color: scale-color($echo_primary,$lightness:80%);
+// @import "compass/layout/grid-background";
+// $grid-background-total-columns: 12;
+// $grid-background-column-width: 60px;
+// $grid-background-gutter-width: 20px;
+// $grid-background-offset: 10px;
+// $grid-background-column-color: scale-color($echo_primary,$lightness:80%);
 
 
 

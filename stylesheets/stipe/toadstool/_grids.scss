@@ -1,0 +1,93 @@
+
+.col_4_grid, .col_10_grid {
+	display: none;
+}
+
+@media #{$tablet_portrait} {
+	.col_10_grid {
+		display: block;
+	}
+	.col_12_grid {
+		display: none;
+	}
+}
+
+@media #{$mobile} {
+	.col_4_grid {
+		display: block;
+	}
+	.col_12_grid, .col_10_grid {
+		display: none;
+	}
+}
+
+
+
+// grid ----------------------
+.grid-1 {
+	@extend %grid_1;
+	@extend %grid_display;
+}
+
+.grid-2 {
+	@extend %grid_2;
+	@extend %grid_display;
+}
+
+.grid-3 {
+	@extend %grid_3;
+	@extend %grid_display;
+}
+
+.grid-4 {
+	@extend %grid_4;
+	@extend %grid_display;
+}
+
+.grid-5 {
+	@extend %grid_5;
+	@extend %grid_display;
+}
+
+.grid-6 {
+	@extend %grid_6;
+	@extend %grid_display;
+}
+
+.grid-7 {
+	@extend %grid_7;
+	@extend %grid_display;
+}
+
+.grid-8 {
+	@extend %grid_8;
+	@extend %grid_display;
+}
+
+.grid-9 {
+	@extend %grid_9;
+	@extend %grid_display;
+}
+
+.grid-10 {
+	@extend %grid_10;
+	@extend %grid_display;
+}
+
+.grid-11 {
+	@extend %grid_11;
+	@extend %grid_display;
+}
+
+.grid-12 {
+	@extend %grid_12;
+	@extend %grid_display;
+}
+
+.grid-full {
+	@include full_width_block(12, $main_grid_align: left);
+}
+
+.grid-full_center {
+	@include full_width_block(12);
+}

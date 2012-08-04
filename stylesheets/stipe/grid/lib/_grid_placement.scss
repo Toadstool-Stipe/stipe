@@ -1,6 +1,6 @@
 // supporting mixin for @mixin the_grid
 // 'grid_placement' sets display, float and margin for the block
-@mixin grid_placement($grid_align, $grid_uom, $grid_child, $margin) {
+@mixin grid_placement($grid_align, $grid_uom, $grid_child, $grid_context_width, $margin) {
 	
 	@include box_sizing;
 	
@@ -22,7 +22,7 @@
 				@include grid_margin($grid_child, $margin_calc);
 			}
 			@else if $grid_uom == percent {
-				$margin_calc: $margin / 960 * 100%;
+				$margin_calc: $margin / $grid_context_width * 100%;
 				@include grid_margin($grid_child, $margin_calc);
 			}
 		}
@@ -37,7 +37,7 @@
 				@include grid_margin($grid_child, $margin_calc);
 			}
 			@else if $grid_uom == percent {
-				$margin_calc: $margin / 960 * 100%;
+				$margin_calc: $margin / $grid_context_width * 100%;
 				@include grid_margin($grid_child, $margin_calc);
 			}
 		}
@@ -52,7 +52,7 @@
 				@include grid_margin($grid_child, $margin_calc);
 			}
 			@else if $grid_uom == percent {
-				$margin_calc: $margin / 960 * 100%;
+				$margin_calc: $margin / $grid_context_width * 100%;
 				@include grid_margin($grid_child, $margin_calc);
 			}
 		}

@@ -1,15 +1,26 @@
+
+
 .main_content {
 	@include full_width_block(12);
 	
 	article {
-		@include grid(12, $grid_align: center, $grid_uom: em);
+		@include grid(12.25, alphaomega, $grid_align: center, $grid_uom: em);
+		
+		@media #{$tablet_portrait} {
+		 @include grid(12.25, alphaomega, $grid_align: center);
+		}
+		
 		@media #{$mobile} {
-			@include grid(12, $grid_align: center);
-			article {
-				width: 100%;
-				margin: 0;
+		 @include grid(12.25, alphaomega, $grid_align: center);
+		}
+		
+		header {
+			@include grid(12);
+			@media #{$mobile} {
+			 @include grid(4, $grid_context: 4);
 			}
 		}
+		
 		section {
 			clear: both;
 			&:nth-of-type(1n+2) {
@@ -20,9 +31,9 @@
 	}
 	.element_example {
 		margin-bottom: em(20);
-		@include column-grid-background;
+		float: left;
+		background-image: url(data:image/gif;base64,R0lGODlhUAABAIAAAP/////l5SwAAAAAUAABAAACC4SPocvtD6NsqIICADs=);
 	}
-
 }
 
 .hidden {

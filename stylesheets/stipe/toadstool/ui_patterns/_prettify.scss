@@ -70,16 +70,30 @@ ol.linenums
     margin-bottom: em(20);
     @include grid(6.125);
     line-height: 1.5em;
-    &:nth-of-type(odd) {
-	    margin-left: 0;
+    
+    
+    
+    @media #{$desktop} {
+			&:nth-of-type(odd) {
+			  margin-left: 0;
+			}
+			&:nth-of-type(even) {
+			  margin-right: 0;
+			}
     }
-    &:nth-of-type(even) {
-	    margin-right: 0;
-    }
-    @media #{$mobile} {
-	    @include grid(12.25, $grid_child: alphaomega);
+    
+    @media #{$tablet_portrait} {
+	    @include grid(10, $grid_context: 10);
 	    padding-right: em(10);
     }
+    
+    @media #{$mobile} {
+	    @include grid(4, $grid_context: 4);
+	    padding-right: em(10);
+    }
+    
+    
+    
     p {
 	    color: $fox_gray;
 	    float: right;
