@@ -1,15 +1,15 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "0.0.1"
-  s.date = "2012-06-04"
+  s.version = "0.0.2"
+  s.date = "2012-08-07"
 
   # Gem Details
   s.name = "stipe"
   s.authors = ["Dale Sande", "Jed Foster"]
   s.summary = %q{Core styles for Toadstool}
   s.description = %q{Core styles for the Toadstool styleguide app.}
-  s.email = "jed@jedfoster.com"
-  s.homepage = "https://github.com/blackfalcon/toadstool"
+  s.email = "dale.sande@gmail.com"
+  s.homepage = "https://github.com/Anotheruiguy/stipe"
 
   # Gem Files
   s.files = %w(README.md)
@@ -19,4 +19,5 @@ Gem::Specification.new do |s|
   # Gem Bookkeeping
   s.rubygems_version = %q{1.3.6}
   s.add_dependency("compass", [">= 0.11"])
+  s.add_dependency("sass", [">=3.2.0.alpha.247"])
 end
