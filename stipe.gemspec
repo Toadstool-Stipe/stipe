@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/Anotheruiguy/stipe"
 
   # Gem Files
-  s.files = %w(README.md)
+  s.files = %w(readme.md)
   s.files += Dir.glob("lib/**/*.*")
   s.files += Dir.glob("stylesheets/**/*.*")
 
