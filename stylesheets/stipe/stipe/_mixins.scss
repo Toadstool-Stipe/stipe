@@ -176,6 +176,7 @@ $inset_shadow: #{$ih-shadow / $em}em #{$iv-shadow / $em}em #{$iblur / $em}em;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
+	display: none;
 }
 ////////////// hide text ////////////
 
