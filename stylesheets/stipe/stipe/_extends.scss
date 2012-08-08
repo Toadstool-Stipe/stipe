@@ -1,9 +1,23 @@
+// Use "!optional" flag of silent extend is allowed to fail
+// example: "@extend %minimal !optional"
+
 
 
 //* Generic global UI objects */
 //* ------------------------- */
 %clearfix {
 	@include clearfix;
+}
+
+%hide_text {
+	@include hide_text;
+}
+
+%mobile_hide {
+	@media #{$mobile} {
+		display: none;
+		visibility: hidden;
+	}
 }
 
 %standard_block_spacing {

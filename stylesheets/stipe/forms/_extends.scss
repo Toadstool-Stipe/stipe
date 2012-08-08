@@ -5,7 +5,7 @@
 	background: $form_field_background_color;
 	@include medium();
 	height: #{32 / $em}em;
-	@include grid(12,12,$grid_uom:combo, $grid_padding_lr:6);
+	@include grid(12,12,$grid_uom:combo, $grid_padding_l:6, $grid_padding_r:6);
 	@include placeholder ($delta_gray);
 
 	@include field_focus;

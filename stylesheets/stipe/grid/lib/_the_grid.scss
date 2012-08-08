@@ -1,11 +1,13 @@
 // 'the_grid' determines width by taking column count, calculates gutter count
 // default setting for grid is ``em`` this is specified in ``_config.scss``
 
-@mixin the_grid($col_count, $col_width, $grid_uom, $grid_padding_lr, $grid_padding_tb, $grid_border, $grid_child, $col_gutter, $grid_align, $grid_context) {
+@mixin the_grid($col_count, $col_width, $grid_uom, $grid_padding_l, $grid_padding_r, $grid_padding_tb, $grid_border, $grid_child, $col_gutter, $grid_align, $grid_context) {
 	
 	$col_gutter_width: ($col_count - 1) * $col_gutter + ($col_count * $col_width); //determines full col width with gutters
 	
 	$grid_context_width: $grid_context * 80; // determines width of contextual grid block for calculating percentages 
+	
+	$grid_padding_lr: $grid_padding_l + $grid_padding_r;
 	
 	@include grid_placement($grid_align, $grid_uom, $grid_child, $grid_context_width, $margin: $col_gutter / 2);
 	
@@ -16,8 +18,8 @@
 		
 		@if $grid_padding_lr > 0 {
 			padding: {
-				left: em($grid_padding_lr);
-				right: em($grid_padding_lr);
+				left: em($grid_padding_l);
+				right: em($grid_padding_r);
 			}
 		}
 		@if $grid_padding_tb > 0 {
@@ -49,8 +51,8 @@
 		@if $grid_padding_lr > 0 {
 			padding: {
 				//left: $grid_padding_lr / $grid_960;
-				left: $grid_padding_lr / $grid_context_width * 100%;
-				right: $grid_padding_lr / $grid_context_width * 100%;
+				left: $grid_padding_l / $grid_context_width * 100%;
+				right: $grid_padding_r / $grid_context_width * 100%;
 			}
 		}
 		@if $grid_padding_tb > 0 {
@@ -74,8 +76,8 @@
 		$grid_width: $col_gutter_width / $grid_context_width * 100%;
 		@if $grid_padding_lr > 0 {
 			padding: {
-				left: em($grid_padding_lr);
-				right: em($grid_padding_lr);
+				left: em($grid_padding_l);
+				right: em($grid_padding_r);
 			}
 		}
 		@if $grid_padding_tb > 0 {
