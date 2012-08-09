@@ -220,3 +220,70 @@
 %echo_color_juliet {
 	background-color: $echo_color_juliet;
 }
+
+
+/////// semantic color blocks ////////
+// ----------------------------------------------
+%white {
+	background: $white;
+}
+
+%shadow_color {
+	background: $shadow_color;
+}
+
+%primary_header_color {
+	background: $primary_header_color;
+}
+
+%heading_font_weight {
+	background: $heading_font_weight;
+}
+
+%primary_text {
+	background: $primary_text;
+}
+
+%href_color {
+	background: $href_color;
+}
+
+%ins_color {
+	background: $ins_color;
+}
+
+%mark_color {
+	background: $mark_color;
+}
+
+%webkit_tap_hightlight {
+	background: $webkit_tap_hightlight;
+}
+
+%selection_color {
+	background: $selection_color;
+}
+
+%selection_text_color {
+	background: $selection_text_color;
+}
+
+%border_color {
+	background: $border_color;
+}
+
+%primary_button_border_color {
+	background: $primary_button_border_color;
+}
+
+%secondary_button_border_color {
+	background: $secondary_button_border_color;
+}
+
+%button_text {
+	background: $button_text;
+}
+
+%standard_hr_color {
+	background: $standard_hr_color;
+}

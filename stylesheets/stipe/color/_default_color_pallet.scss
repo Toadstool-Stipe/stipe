@@ -3,13 +3,13 @@
 // Preferred uses include @extend %class; or repurpose the mixin within the class.
 //
 
-$alpha_primary:   #ec0036 !default; // red
-$bravo_primary:   #299505 !default; // green
-$charlie_primary: #ffff87 !default; // yellow
-$delta_primary:   #2c46b7 !default; // blue
-$echo_primary:    #fc6432 !default; // accent
-          
-$alpha_gray:      #000 !default;    //black
+$alpha_primary:   #5A2E2E;        // red
+$bravo_primary:   #299505;        // green
+$charlie_primary: #ffff87;        // yellow
+$delta_primary:   #2c46b7;        // blue
+$echo_primary:    #fc6432;        // accent
+                 
+$alpha_gray:      #333;           //black
 
 
 @import "color_math";
@@ -54,3 +54,10 @@ $selection_text_color:  $primary_text !default;
 
 // default border color
 $border_color:          $charlie_gray !default;
+
+
+// Config defaults for buttons
+// -----------------------------------------------------------------------------
+$primary_button_border_color:          $bravo_color !default;
+$secondary_button_border_color:        $bravo_gray !default;
+$button_text:                          $white !default;
