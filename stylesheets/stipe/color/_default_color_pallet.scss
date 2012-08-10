@@ -3,13 +3,13 @@
 // Preferred uses include @extend %class; or repurpose the mixin within the class.
 //
 
-$alpha_primary:   #5A2E2E;        // red
-$bravo_primary:   #299505;        // green
-$charlie_primary: #ffff87;        // yellow
-$delta_primary:   #2c46b7;        // blue
-$echo_primary:    #fc6432;        // accent
-                 
-$alpha_gray:      #333;           //black
+$alpha_primary:   #5a2e2e !default;        // red
+$bravo_primary:   #3e4147 !default;        // green
+$charlie_primary: #fffedf !default;        // yellow
+$delta_primary:   #2a2c31 !default;        // blue
+$echo_primary:    #dfba69 !default;        // accent
+                  
+$alpha_gray:      #333 !default;           //black
 
 
 @import "color_math";
@@ -34,7 +34,7 @@ $primary_header_color:  $alpha_gray !default;
 $primary_text:          $bravo_gray !default;
 
 // default <a href="#"> link color
-$href_color:            $delta_color !default;
+$href_color:            $alpha_color_delta !default;
 $href_color_alt:        $delta_color_bravo !default;
 
 // used with the <ins> tag
