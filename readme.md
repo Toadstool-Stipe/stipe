@@ -13,7 +13,11 @@ Stipe is a Compass Extension, so Compass is set as a depdency. You will need to 
 
 # Stipe Changelog
 
+## 0.0.2.7
+* Sass and UI work related to default form views
+
 ## 0.0.2.6
 * Created color views in Toadstool
 * Created remaining semantic color variables silent classes
 * Updated Toadstool `_design / _ui_manifest.scss` 
+

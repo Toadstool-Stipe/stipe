@@ -5,13 +5,20 @@
 	background: $form_field_background_color;
 	@include medium();
 	height: #{32 / $em}em;
-	@include grid(12,12,$grid_uom:combo, $grid_padding_l:6, $grid_padding_r:6);
+	@include grid(12.25, alphaomega, $grid_padding_l:6, $grid_padding_r:6);
 	@include placeholder ($delta_gray);
 
 	@include field_focus;
 	color: $form_field_text;
 	+ .horizontal_selectors {
 		margin-top: -0.5em;
+	}
+	
+	@include input_placeholder(transparent);
+	
+	@media #{$tablet_portrait} {
+	 -webkit-appearance: none;  // this is to remove the default inner shadow
+	 @include input_placeholder($placeholder_text);
 	}
 }
 

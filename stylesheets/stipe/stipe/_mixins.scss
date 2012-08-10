@@ -8,9 +8,13 @@
 
 // required default value to for vendor prefix support
 // -----------------------------------------------------
-$prefix_defaults: -moz- -webkit- -o- -ms- '';
-$webkit_support: -webkit- '';
-$moz_webkit_support: -moz- -webkit- '';
+$prefix_defaults: -moz- -webkit- -o- -ms- '' !default;
+$webkit_support: -webkit- '' !default;
+$moz_support: -moz- !default;
+$ms_support: -ms- !default; 
+$moz_webkit_support: -moz- -webkit- '' !default;
+$moz_ms_support: -moz- -ms- '' !default;
+$webkit_ms_support: -webkit- -ms- !default;
 
 
 
@@ -60,6 +64,25 @@ $inset_shadow: #{$ih-shadow / $em}em #{$iv-shadow / $em}em #{$iblur / $em}em;
 	}
 }
 /////// box-sizing arguments	/////////
+
+
+
+/////// input_placeholder arguments	/////////
+// --------------------------------------
+@mixin input_placeholder ($placeholder_color, $placeholder_prefix: $moz_support, $input-placeholder_prefix: $webkit_ms_support) {
+	@each $prefix in $input-placeholder_prefix {
+	 &::#{$prefix}input-placeholder {
+	 	color: $placeholder_color;
+	 }
+	}
+	@each $prefix in $placeholder_prefix {
+	 &:#{$prefix}placeholder {
+	 	color: $placeholder_color;
+	 }
+	}
+}
+/////// input_placeholder arguments	/////////
+
 
 
 

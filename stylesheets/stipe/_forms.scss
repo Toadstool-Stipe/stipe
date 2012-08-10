@@ -19,6 +19,8 @@ $error_text:                    $alpha_color !default;
 $form_field_fail:               $alpha_color !default;
 $form_field_text_fail:          $alpha_color !default;
 $instructional_text:            $charlie_gray !default;
+$placeholder_text:              $hotel_gray !default;
+$form_label_color:              $alpha_gray !default;
 
 @import "forms/mixins";
 @import "forms/extends";

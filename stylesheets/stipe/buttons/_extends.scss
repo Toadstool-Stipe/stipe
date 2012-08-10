@@ -2,12 +2,12 @@
 // ---------------------------------------------------------
 
 %stipe_buttons {
-	@extend %minimal !optional;
+	@extend %cupid-green;
 	margin-right: em(10);
 	&:last-child {
 		margin: 0;
 	}
 	&:nth-child(n+2) {
-		@extend %cupid-green !optional;
+		@extend %minimal;
 	}
 }
