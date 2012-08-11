@@ -1,6 +1,9 @@
 // Default display Stipe buttons
 // ---------------------------------------------------------
 
+@import 'lib/cupid-green';
+@import 'lib/minimal';
+
 %stipe_buttons {
 	@extend %cupid-green;
 	margin-right: em(10);
