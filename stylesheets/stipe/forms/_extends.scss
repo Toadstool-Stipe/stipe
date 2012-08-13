@@ -4,7 +4,8 @@
 	border: 1px solid $form_field_border;
 	background: $form_field_background_color;
 	@include medium();
-	height: #{32 / $em}em;
+	//height: #{32 / $em}em;
+	height: 2.7em;
 	@include grid(12.25, alphaomega, $grid_padding_l:6, $grid_padding_r:6);
 	@include placeholder ($delta_gray);
 
@@ -17,7 +18,6 @@
 	@include input_placeholder(transparent);
 	
 	@media #{$tablet_portrait} {
-	 -webkit-appearance: none;  // this is to remove the default inner shadow
 	 @include input_placeholder($placeholder_text);
 	}
 }

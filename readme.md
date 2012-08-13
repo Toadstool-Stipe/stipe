@@ -13,6 +13,10 @@ Stipe is a Compass Extension, so Compass is set as a depdency. You will need to 
 
 # Stipe Changelog
 
+## 0.0.2.8
+* Updated Toadstool Sass to use better named spaced class for main content block. 
+** Changed .main_content to .toadstool_main_contnet
+
 ## 0.0.2.7
 * Sass and UI work related to default form views
 
