@@ -72,7 +72,8 @@ $heading_font_family: #{'Lato', sans-serif} !default;
 // setting default units of measurement for Toadstool grid solution
 // $grid_type:                  12 !default;             // sets default column grid
 // $grid_uom:                   percent !default;        // use either ``em`` or ``percent``
-// $grid_padding_lr:            0 !default;              // sets default left/right padding inside grid block
+// $grid_padding_l:             0 !default;              // sets default left/right padding inside grid block
+// $grid_padding_r:             0 !default;              // sets default left/right padding inside grid block
 // $grid_padding_tb:            0 !default;              // sets default top/bottom padding inside grid block
 // $grid_border:                0 !default;              // sets default border width on all grid blocks
 // $grid_child:                 none !default;           // sets parent child relationship between grid blocks
