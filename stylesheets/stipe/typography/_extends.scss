@@ -4,7 +4,7 @@
 // }
 
 
-/* Text classes */
+//* Text classes */
 %headings_1 {
 	@include heading();
 }
@@ -46,7 +46,7 @@
 
 
 
-/* Font family classes */
+//* Font family classes */
 %primary_font_family {
 	font-family: $primary_font_family;
 }
@@ -63,7 +63,7 @@
 
 
 
-/* Hide Text, Kellum Method */
+//* Hide Text, Kellum Method */
 %hide_text {
 	@include hide_text;
 }
@@ -71,7 +71,7 @@
 
 
 
-/* Standard content block styling */
+//* Standard content block styling */
 %bulleted_list {
 	@include bulleted_list;
 }
