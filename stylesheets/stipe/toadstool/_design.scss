@@ -3,7 +3,7 @@
 .styleguide_main_content {
 	@include full_width_block(12);
 	
-	article {
+	.styleguide_article, .element_example {
 		@include grid(12.25, alphaomega, $grid_align: center, $grid_uom: em);
 		
 		@media #{$tablet_portrait} {
@@ -14,7 +14,7 @@
 		 @include grid(12.25, alphaomega, $grid_align: center);
 		}
 		
-		header {
+		.toadstool_header, .toadstool_subheader {
 			@include grid(12);
 			@media #{$mobile} {
 			 @include grid(4, $grid_context: 4);

@@ -43,13 +43,13 @@ $ins_color:             $charlie_color !default;
 
 // used with the <mark> tag
 // http://www.w3schools.com/html5/tag_mark.asp
-$mark_color:            $charlie_color !default;
+$mark_color:            yellow !default;
 
 // webkit tap highlight color
 $webkit_tap_hightlight: $delta_color_bravo !default;
 
 // overrides the default content selection color in the browser
-$selection_color:       $charlie_color !default;
+$selection_color:       yellow !default;
 $selection_text_color:  $primary_text !default;
 
 // default border color

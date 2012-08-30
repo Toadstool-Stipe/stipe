@@ -17,6 +17,11 @@ For [reasons explained](/Anotheruiguy/toadstool/blob/master/doc-src/exploited-bu
 
 # Stipe Changelog
 
+## 0.0.3.2
+* Updates to how default color extends are created in `toadstool.css`
+** Created new `readme.md` in Stipe's color directory
+* Modifications to css for Toadstool's style guide look and feel. Addressed bugs with styles stomping on generic tags in prototype views
+
 ## 0.0.2.8/0.0.2.9
 * Updated Toadstool Sass to use better named spaced class for main content block. 
 ** Changed .main_content to .toadstool_main_contnet
