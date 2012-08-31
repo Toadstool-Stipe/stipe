@@ -17,6 +17,9 @@ For [reasons explained](/Anotheruiguy/toadstool/blob/master/doc-src/exploited-bu
 
 # Stipe Changelog
 
+## 0.0.3.3
+* Updates to grid soluiton for legacy browser support
+
 ## 0.0.3.2
 * Updates to how default color extends are created in `toadstool.css`
 ** Created new `readme.md` in Stipe's color directory

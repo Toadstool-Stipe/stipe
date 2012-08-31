@@ -36,7 +36,7 @@
 		$grid_width_fallback: $col_gutter_width - (($grid_padding_lr * 2) + ($grid_border * 2));
 		
 		@if $grid_width_fallback < $col_gutter_width {
-			.ie7 & {
+			.no-boxsizing & {
 		   	width: #{$grid_width_fallback}px;
 		   }
 		}
@@ -67,7 +67,7 @@
 		$grid_width_fallback: $col_gutter_width - (($grid_padding_lr * 2) + ($grid_border * 2));
 		
 		@if $grid_width_fallback < $col_gutter_width {
-			.ie7 & {
+			.no-boxsizing & {
 		   	width: $grid_width_fallback / $grid_context_width * 100%;
 		   }
 		}
@@ -92,7 +92,7 @@
 		$grid_width_fallback: $col_gutter_width - (($grid_padding_lr * 2) + ($grid_border * 2));
 		
 		@if $grid_width_fallback < $col_gutter_width {
-			.ie7 & {
+			.no-boxsizing & {
 		   	width: $grid_width_fallback / $grid_context_width * 100%;
 		   }
 		}
