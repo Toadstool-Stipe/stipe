@@ -86,7 +86,8 @@ ol.linenums
     p {
 	    color: $fox_gray;
 	    float: right;
-	    margin: em(10) em(10) em(5) 0;
+	    margin: 0 em(10) em(10) 0;
+	    font-size: 1.5em;
 	    @media #{$mobile} {
 		    margin-right: 0;
 	    }
