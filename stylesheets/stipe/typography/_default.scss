@@ -4,6 +4,9 @@ html {
 	font: em($font_size, 16) $primary_font_family;
 	line-height: baseline($font_size);
 	color: $primary_text;
+	@media #{$mobile} {
+		-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+	}
 }
 
 h1 {
