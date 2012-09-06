@@ -17,9 +17,11 @@ For [reasons explained](/Anotheruiguy/toadstool/blob/master/doc-src/exploited-bu
 
 # Stipe Changelog
 
+## 0.0.3.5
+* Updated code blocks to be 100% of view versus two columns by default
+
 ## 0.0.3.4
 * Updated default text to have text-adjust set to none.
-
 
 ## 0.0.3.3
 * Updates to grid soluiton for legacy browser support

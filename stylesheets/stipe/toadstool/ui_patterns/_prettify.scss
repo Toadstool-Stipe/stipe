@@ -68,20 +68,9 @@ ol.linenums
     @include border_radius(em(5));
     padding: em(10) em(10) 0 em(20);
     margin-bottom: em(20);
-    @include grid(6.125);
+    @include grid(12);
     line-height: 1.5em;
-    
-    
-    
-    @media #{$desktop} {
-			&:nth-of-type(odd) {
-			  margin-left: 0;
-			}
-			&:nth-of-type(even) {
-			  margin-right: 0;
-			}
-    }
-    
+        
     @media #{$tablet_portrait} {
 	    @include grid(10, $grid_context: 10);
 	    padding-right: em(10);
