@@ -26,8 +26,12 @@ $icon_font_bravo: #{'zocial'} !default;
 // Headings default arguments
 $heading_size: $heading_1 !default;
 $heading_font_family: $heading_font_family !default;
-$heading_color: $primary_header_color !default;
 $heading_font_weight: normal !default;
+$heading_color: $primary_header_color !default;
+// $heading_color == value used mixin
+// $primary_header_color == set in Stip /stipe/color/_default_color_pallet.scss
+// override using Toadstool _config.scss
+
 
 //// !do not edit! ////
 $em:          $font_size; // $em ALWAYS == $font-size
