@@ -6,40 +6,40 @@
 
 //* Text classes */
 %headings_1 {
-	@include heading();
+  @include heading();
 }
 
 %headings_2 {
-	@include heading($heading_2);
+  @include heading($heading_2);
 }
 
 %headings_3 {
-	@include heading($heading_3);
+  @include heading($heading_3);
 }
 
 %headings_4 {
-	@include heading($heading_4);
+  @include heading($heading_4);
 }
 
 %headings_5 {
-	@include heading($heading_5);
+  @include heading($heading_5);
 }
 
 %headings_6 {
-	@include heading($heading_6);
+  @include heading($heading_6);
 }
 
 
 %small {
-	@include small;
+  @include small;
 }
 
 %medium {
-	@include medium;
+  @include medium;
 }
 
 %large {
-	@include large;
+  @include large;
 }
 
 
@@ -48,15 +48,15 @@
 
 //* Font family classes */
 %primary_font_family {
-	font-family: $primary_font_family;
+  font-family: $primary_font_family;
 }
 
 %secondary_font_family {
-	font-family: $secondary_font_family;
+  font-family: $secondary_font_family;
 }
 
 %heading_font_family {
-	font-family: $heading_font_family;
+  font-family: $heading_font_family;
 }
 
 
@@ -65,7 +65,7 @@
 
 //* Hide Text, Kellum Method */
 %hide_text {
-	@include hide_text;
+  @include hide_text;
 }
 
 
@@ -73,13 +73,13 @@
 
 //* Standard content block styling */
 %bulleted_list {
-	@include bulleted_list;
+  @include bulleted_list;
 }
 
 %content_block {
-	@extend %standard_block_spacing;
-	float: left;
-	@extend %bulleted_list;
+  @extend %standard_block_spacing;
+  float: left;
+  @extend %bulleted_list;
 }
 
 
