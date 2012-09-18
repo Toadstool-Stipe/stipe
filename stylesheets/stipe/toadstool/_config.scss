@@ -195,6 +195,7 @@ $blur:                                 3 !default;                // blur settin
 $inset_color:                          $shadow_color !default;    // for use with ``dual_box_shadow`` mixin
 $ih-shadow:                            0 !default;                // inset horizontal shadow settings
 $iv-shadow:                            2 !default;                // inset vertical shaddow settings
+$is-shadow:                            2 !default;                // inset spread shaddow settings
 $iblur:                                3 !default;                // inset blur settings
 
 

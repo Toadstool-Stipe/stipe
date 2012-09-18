@@ -16,6 +16,9 @@ Stipe is a Compass Extension, so Compass is set as a depdency. You will need to 
 For [reasons explained](/Anotheruiguy/toadstool/blob/master/doc-src/exploited-bug.md) please continue using the alpha gem and upgrading to Sass 3.2 will break Toadstool and Stipe. 
 
 # Stipe Changelog
+## 0.0.3.7
+* Updates to Toadstool nav and grid display for legacy browsers
+* Updates to flexbox to support legacy and new based on current support
 
 ## 0.0.3.5
 * Updated code blocks to be 100% of view versus two columns by default

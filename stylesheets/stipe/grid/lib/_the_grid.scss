@@ -1,15 +1,20 @@
 // 'the_grid' determines width by taking column count, calculates gutter count
 // default setting for grid is ``em`` this is specified in ``_config.scss``
 
-@mixin the_grid($col_count, $col_width, $grid_uom, $grid_padding_l, $grid_padding_r, $grid_padding_tb, $grid_border, $grid_child, $col_gutter, $grid_align, $grid_context) {
+@mixin the_grid($col_count, $col_width, $grid_uom, $grid_padding_l, $grid_padding_r, $grid_padding_tb, $grid_border, $grid_child, $col_gutter, $grid_align, $grid_context, $border_color) {
 	
-	$col_gutter_width: ($col_count - 1) * $col_gutter + ($col_count * $col_width); //determines full col width with gutters
+	//determines full col width with gutters
+	$col_gutter_width: ($col_count - 1) * $col_gutter + ($col_count * $col_width); 
 	
-	$grid_context_width: $grid_context * 80; // determines width of contextual grid block for calculating percentages 
+	// determines width of contextual grid block for calculating percentages
+	$grid_context_width: $grid_context * 80;  
 	
 	$grid_padding_lr: $grid_padding_l + $grid_padding_r;
 	
 	@include grid_placement($grid_align, $grid_uom, $grid_child, $grid_context_width, $margin: $col_gutter / 2);
+	
+	// fallback for unsupported browsers
+	$grid_width_fallback: $col_gutter_width - (($grid_padding_l + $grid_padding_r) + ($grid_border * 2));
 	
 	@if $grid_uom == em {
 		@if $grid_border > 0 {
@@ -31,9 +36,6 @@
 		$grid_width: em($col_gutter_width);
 		width: $grid_width;
 		
-		
-		// fallback for unsupported browsers
-		$grid_width_fallback: $col_gutter_width - (($grid_padding_lr * 2) + ($grid_border * 2));
 		
 		@if $grid_width_fallback < $col_gutter_width {
 			.no-boxsizing & {
@@ -63,9 +65,6 @@
 		}
 		width: $grid_width;
 		
-		// fallback for unsupported browsers
-		$grid_width_fallback: $col_gutter_width - (($grid_padding_lr * 2) + ($grid_border * 2));
-		
 		@if $grid_width_fallback < $col_gutter_width {
 			.no-boxsizing & {
 		   	width: $grid_width_fallback / $grid_context_width * 100%;
@@ -87,9 +86,6 @@
 			}
 		}
 		width: $grid_width;
-		
-		// fallback for unsupported browsers
-		$grid_width_fallback: $col_gutter_width - (($grid_padding_lr * 2) + ($grid_border * 2));
 		
 		@if $grid_width_fallback < $col_gutter_width {
 			.no-boxsizing & {

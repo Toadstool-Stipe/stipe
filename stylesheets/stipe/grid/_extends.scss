@@ -5,10 +5,10 @@
 
 // grid ----------------------
 %grid_display {
-	border: 1px solid $charlie_gray;
 	margin-bottom: 1em;
 	text-align: center;
 	padding: em(10) 0;
+	@include box_shadow (inset $shadow_color, 0 0 em(20) em(10));
 }
 
 %grid_1 {

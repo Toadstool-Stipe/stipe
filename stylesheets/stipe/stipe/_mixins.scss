@@ -21,8 +21,21 @@ $webkit_ms_support: -webkit- -ms- !default;
 
 /////// shadow arguments /////////
 // -------------------------------
-$shadow: #{$h-shadow / $em}em #{$v-shadow / $em}em #{$blur / $em}em;
-$inset_shadow: #{$ih-shadow / $em}em #{$iv-shadow / $em}em #{$iblur / $em}em;
+// Config values for all default shadows
+// -----------------------------------------------------------------------------
+$h-shadow:                             0 !default;                // horizontal shadow settings
+$v-shadow:                             2 !default;                // vertical shaddow settings
+$blur:                                 3 !default;                // blur settings
+
+$inset_color:                          $shadow_color !default;    // for use with ``dual_box_shadow`` mixin
+$ih-shadow:                            0 !default;                // inset horizontal shadow settings
+$iv-shadow:                            2 !default;                // inset vertical shaddow settings
+$is-shadow:                            2 !default;                // inset spread shaddow settings
+$iblur:                                3 !default;                // inset blur settings
+
+
+$shadow: em($h-shadow) em($v-shadow) em($blur);
+$inset_shadow: em($ih-shadow) em($iv-shadow) em($iblur) em($is-shadow);
 
 @mixin box_shadow ($shadow_color, $shadow, $prefixes: $prefix_defaults) {
   @each $prefix in $prefixes {
@@ -58,7 +71,7 @@ $inset_shadow: #{$ih-shadow / $em}em #{$iv-shadow / $em}em #{$iblur / $em}em;
 
 /////// box-sizing arguments  /////////
 // --------------------------------------
-@mixin box_sizing ($box_sizing: border-box, $prefixes: $moz_webkit_support) {
+@mixin box_sizing ($box_sizing: border-box, $prefixes: $prefix_defaults) {
   @each $prefix in $prefixes {
     #{$prefix}box-sizing: $box_sizing;
   }
@@ -69,19 +82,15 @@ $inset_shadow: #{$ih-shadow / $em}em #{$iv-shadow / $em}em #{$iblur / $em}em;
 
 /////// input_placeholder arguments /////////
 // --------------------------------------
-@mixin input_placeholder (
-$placeholder_color: $placeholder_color, 
-$single_colon_prefix: $moz_ms_support, 
-$double_colon_prefix: $webkit_support) {
-  @each $prefix in $double_colon_prefix {
-    &::#{$prefix}input-placeholder {
-      color: $placeholder_color;
-    }
+@mixin input_placeholder ($placeholder_color: $placeholder_color) {
+  &::-webkit-input-placeholder {
+    color: $placeholder_color;
   }
-  @each $prefix in $single_colon_prefix {
-    &:#{$prefix}placeholder {
-      color: $placeholder_color;
-    }
+  &:-moz-placeholder {
+    color: $placeholder_color;
+  }
+  &:-ms-input-placeholder {
+    color: $placeholder_color;
   }
 }
 /////// input_placeholder arguments /////////
@@ -132,21 +141,60 @@ $double_colon_prefix: $webkit_support) {
 
 ///////// flexbox arguments /////////
 // -----------------------------------
-@mixin flexbox ($width, $height, $orient: horizontal, $pack: center, $align: center, $prefixes: $prefix_defaults) {
-  @each $prefix in $prefixes {
-    display: #{$prefix}box;
-    #{$prefix}box-orient: $orient;
-    #{$prefix}box-pack: $pack;
-    #{$prefix}box-align: $align;
+@mixin flexbox (
+$width, 
+$height, 
+$orient: horizontal,
+$direction: row, 
+$pack: center, 
+$align: center, 
+$wrap: none,
+$prefixes: $prefix_defaults,
+$legacyPrefixes: $moz_webkit_support) {
+  @each $prefix in $legacyPrefixes {
+    .flexboxlegacy & {
+      display: #{$prefix}box;
+      #{$prefix}box-orient: $orient;
+      #{$prefix}box-pack: $pack;
+      #{$prefix}box-align: $align;
+    } 
+  }
+  // As of 15.0.1 Mozilla does not support the new Flexbox spec
+  @each $prefix in $webkit_ms_support {
+    .flexbox & {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      #{$prefix}flex-direction: $direction;
+      #{$prefix}flex-align: $align;
+      #{$prefix}flex-pack: $pack;
+      #{$prefix}flex-wrap: $wrap;
+    }
+  }
+  .no-flexbox & {
+    width: 100%;
+    float: left;
   }
   height: $height;
   width: $width;
 }
 
   
-@mixin flex ($value, $prefixes: $prefix_defaults) {
+@mixin flex (
+$value, 
+$prefixes: $prefix_defaults,
+$legacyPrefixes: $moz_webkit_support) {
+  @each $prefix in $legacyPrefixes {
+    .flexboxlegacy & {
+      #{$prefix}box-flex: $value;
+    } 
+  }
   @each $prefix in $prefixes {
-    #{$prefix}box-flex: $value;
+    .flexbox & {
+      #{$prefix}flex: $value;
+    }
+  }
+  .no-flexbox & {
+    float: left;
   }
 }
 ///////// flexbox arguments /////////
