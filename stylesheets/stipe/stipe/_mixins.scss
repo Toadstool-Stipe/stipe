@@ -141,6 +141,10 @@ $inset_shadow: em($ih-shadow) em($iv-shadow) em($iblur) em($is-shadow);
 
 ///////// flexbox arguments /////////
 // -----------------------------------
+// Flexbox is still very experimental and there are issues with each browser implementation of this.
+// As seen in tests, Webkit's version causes odd appearances of bottom scroll bar appearance
+// based on number of items in the flexbox when encompassing the full width of the view.
+// As result, Stipe's engineering is based on using flexboxlegacy and flexbox modernizer tests.
 @mixin flexbox (
 $width, 
 $height, 
@@ -159,18 +163,21 @@ $legacyPrefixes: $moz_webkit_support) {
       #{$prefix}box-align: $align;
     } 
   }
-  // As of 15.0.1 Mozilla does not support the new Flexbox spec
-  @each $prefix in $webkit_ms_support {
+  //As of 15.0.1 Mozilla does not support the new Flexbox spec
+  //As of Chrome 21.0.1180.89 Webkit is to buggy to impliment, causes lower scoll bar
+  //IE10 only supports the newer flexbox spec and does not exibit the issues that Chrome/Webkit does
+  @each $prefix in $ms_support {
     .flexbox & {
       display: -ms-flexbox;
-      display: -webkit-flex;
       #{$prefix}flex-direction: $direction;
       #{$prefix}flex-align: $align;
       #{$prefix}flex-pack: $pack;
       #{$prefix}flex-wrap: $wrap;
     }
   }
-  .no-flexbox & {
+  // no-flexboxlegacy needs to be tested as Mozilla reports no-flexbox when testing for flexboxlegacy
+  // and causes a false positive when simply testing for no-flexbox.
+  .no-flexboxlegacy & {
     width: 100%;
     float: left;
   }
@@ -188,12 +195,12 @@ $legacyPrefixes: $moz_webkit_support) {
       #{$prefix}box-flex: $value;
     } 
   }
-  @each $prefix in $prefixes {
+  @each $prefix in $ms_support {
     .flexbox & {
       #{$prefix}flex: $value;
     }
   }
-  .no-flexbox & {
+  .no-flexboxlegacy & {
     float: left;
   }
 }
