@@ -6,15 +6,16 @@
 // All values are entered as integers and conversion math is done in the mixin.
 // Do not enter combination values such as '36em'
 
-@mixin grid($col_count, $grid_child, $grid_padding_l, $grid_padding_r, $grid_padding_tb, $grid_border, $grid_uom, $col_gutter, $grid_type, $grid_align, $grid_context, $border_color) {
+$border_place: '';
+@mixin grid($col_count, $grid_child, $grid_padding_l, $grid_padding_r, $grid_padding_tb, $grid_border, $grid_uom, $col_gutter, $grid_type, $grid_align, $grid_context, $border_color, $border_place: $border_place) {
 
 	@if $grid_type == 12 {
 		$col_width: 80 - $col_gutter;
-		@include the_grid($col_count, $col_width, $grid_uom, $grid_padding_l, $grid_padding_r, $grid_padding_tb, $grid_border, $grid_child, $col_gutter, $grid_align, $grid_context, $border_color);
+		@include the_grid($col_count, $col_width, $grid_uom, $grid_padding_l, $grid_padding_r, $grid_padding_tb, $grid_border, $grid_child, $col_gutter, $grid_align, $grid_context, $border_color, $border_place);
 	}
 	@else if $grid_type == 16 {
 		$col_width: 60 - $col_gutter;
-		@include the_grid($col_count, $col_width, $grid_uom, $grid_padding_l, $grid_padding_r, $grid_padding_tb, $grid_border, $grid_child, $col_gutter, $grid_align, $grid_context, $border_color);
+		@include the_grid($col_count, $col_width, $grid_uom, $grid_padding_l, $grid_padding_r, $grid_padding_tb, $grid_border, $grid_child, $col_gutter, $grid_align, $grid_context, $border_color, $border_place);
 	}
 }
 
