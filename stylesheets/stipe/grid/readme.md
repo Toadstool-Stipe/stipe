@@ -19,7 +19,7 @@ Additional arguments can be passed into the grid mixin to include `$grid_padding
 * `$grid_padding_r` => adds padding RIGHT, takes intager value
 * `$grid_padding_tb` => adds padding TOP and BOTTOM, takes intager value
 * `$grid_border` => takes intager value, adds border using `$border_color` and `$standard_border_style` configs found in `_config.scss`.
-* `$border_place' => options are `left` and `right`. Argument will place a single border on either the left or right side of the block.
+* `$border_place` => arguments are `left` and `right`. Argument will place a single border on either the left or right side of the block.
 * `$grid_uom` => set to percent by default, accepts `em` as argument.
 * `$col_gutter` => takes intager to adjust col gutter
 * `$grid_type` => set to 12 col by default, allows for on-the-fly adjustment to grid type <b>Feature us currently inoperable</b>
