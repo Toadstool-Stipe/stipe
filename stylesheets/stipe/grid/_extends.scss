@@ -5,217 +5,217 @@
 
 // grid ----------------------
 %grid_display {
-	margin-bottom: 1em;
-	text-align: center;
-	padding: em(10) 0;
-	@include box_shadow (inset $shadow_color, 0 0 em(20) em(10));
+  margin-bottom: 1em;
+  text-align: center;
+  padding: em(10) 0;
+  @include box_shadow (inset $shadow_color, 0 0 em(20) em(10));
 }
 
 %grid_1 {
-	@include grid(1);
-	@media #{$tablet_portrait} {
-		@include grid(1, $grid_context: 10);
-	}
-	@media #{$mobile} {
-		@include grid(1, $grid_context: 4);
-	}
+  @include grid(1);
+  @media #{$tablet_portrait} {
+    @include grid(1, $grid_context: 10);
+  }
+  @media #{$mobile} {
+    @include grid(1, $grid_context: 4);
+  }
 }
 
 %grid_2 {
-	@include grid(2);
-	@media #{$tablet_portrait} {
-		@include grid(2, $grid_context: 10);
-	}
-	@media #{$mobile} {
-		@include grid(2, $grid_context: 4);
-	}
+  @include grid(2);
+  @media #{$tablet_portrait} {
+    @include grid(2, $grid_context: 10);
+  }
+  @media #{$mobile} {
+    @include grid(2, $grid_context: 4);
+  }
 }
 
 %grid_3 {
-	@include grid(3);
-	@media #{$tablet_portrait} {
-		@include grid(3, $grid_context: 10);
-	}
-	@media #{$mobile} {
-		@include grid(3, $grid_context: 4);
-	}
+  @include grid(3);
+  @media #{$tablet_portrait} {
+    @include grid(3, $grid_context: 10);
+  }
+  @media #{$mobile} {
+    @include grid(3, $grid_context: 4);
+  }
 }
 
 %grid_4 {
-	@include grid(4);
-	@media #{$tablet_portrait} {
-		@include grid(4, $grid_context: 10);
-	}
-	@media #{$mobile} {
-		@include grid(4, $grid_context: 4);
-	}
+  @include grid(4);
+  @media #{$tablet_portrait} {
+    @include grid(4, $grid_context: 10);
+  }
+  @media #{$mobile} {
+    @include grid(4, $grid_context: 4);
+  }
 }
 
 %grid_5 {
-	@include grid(5);
-	@media #{$tablet_portrait} {
-		@include grid(5, $grid_context: 10);
-	}
-	@media #{$mobile} {
-		@include grid(4, $grid_context: 4);
-	}
+  @include grid(5);
+  @media #{$tablet_portrait} {
+    @include grid(5, $grid_context: 10);
+  }
+  @media #{$mobile} {
+    @include grid(4, $grid_context: 4);
+  }
 }
 
 %grid_6 {
-	@include grid(6);
-	@media #{$tablet_portrait} {
-		@include grid(6, $grid_context: 10);
-	}
-	@media #{$mobile} {
-		@include grid(4, $grid_context: 4);
-	}
+  @include grid(6);
+  @media #{$tablet_portrait} {
+    @include grid(6, $grid_context: 10);
+  }
+  @media #{$mobile} {
+    @include grid(4, $grid_context: 4);
+  }
 }
 
 %grid_7 {
-	@include grid(7);
-	@media #{$tablet_portrait} {
-		@include grid(7, $grid_context: 10);
-	}
-	@media #{$mobile} {
-		@include grid(4, $grid_context: 4);
-	}
+  @include grid(7);
+  @media #{$tablet_portrait} {
+    @include grid(7, $grid_context: 10);
+  }
+  @media #{$mobile} {
+    @include grid(4, $grid_context: 4);
+  }
 }
 
 %grid_8 {
-	@include grid(8);
-	@media #{$tablet_portrait} {
-		@include grid(8, $grid_context: 10);
-	}
-	@media #{$mobile} {
-		@include grid(4, $grid_context: 4);
-	}
+  @include grid(8);
+  @media #{$tablet_portrait} {
+    @include grid(8, $grid_context: 10);
+  }
+  @media #{$mobile} {
+    @include grid(4, $grid_context: 4);
+  }
 }
 
 %grid_9 {
-	@include grid(9);
-	@media #{$tablet_portrait} {
-		@include grid(9, $grid_context: 10);
-	}
-	@media #{$mobile} {
-		@include grid(4, $grid_context: 4);
-	}
+  @include grid(9);
+  @media #{$tablet_portrait} {
+    @include grid(9, $grid_context: 10);
+  }
+  @media #{$mobile} {
+    @include grid(4, $grid_context: 4);
+  }
 }
 
 %grid_10 {
-	@include grid(10);
-	@media #{$tablet_portrait} {
-		@include grid(10, $grid_context: 10);
-	}
-	@media #{$mobile} {
-		@include grid(4, $grid_context: 4);
-	}
+  @include grid(10);
+  @media #{$tablet_portrait} {
+    @include grid(10, $grid_context: 10);
+  }
+  @media #{$mobile} {
+    @include grid(4, $grid_context: 4);
+  }
 }
 
 %grid_11 {
-	@include grid(11);
-	@media #{$tablet_portrait} {
-		@include grid(10, $grid_context: 10);
-	}
-	@media #{$mobile} {
-		@include grid(4, $grid_context: 4);
-	}
+  @include grid(11);
+  @media #{$tablet_portrait} {
+    @include grid(10, $grid_context: 10);
+  }
+  @media #{$mobile} {
+    @include grid(4, $grid_context: 4);
+  }
 }
 
 %grid_12 {
-	@include grid(12);
-	@media #{$tablet_portrait} {
-		@include grid(10, $grid_context: 10);
-	}
-	@media #{$mobile} {
-		@include grid(4, $grid_context: 4);
-	}
+  @include grid(12);
+  @media #{$tablet_portrait} {
+    @include grid(10, $grid_context: 10);
+  }
+  @media #{$mobile} {
+    @include grid(4, $grid_context: 4);
+  }
 }
 
 %grid_full {
-	@include full_width_block(12, $main_grid_align: left);
+  @include full_width_block(12, $main_grid_align: left);
 }
 
 %grid_full_center {
-	@include full_width_block(12);
+  @include full_width_block(12);
 }
 
 // push ----------------------
 
 %push_12_1 {
-	@include push(12,1);
+  @include push(12,1);
 }
 
 %push_12_2 {
-	@include push(12,2);
+  @include push(12,2);
 }
 
 %push_12_3 {
-	@include push(12,3);
+  @include push(12,3);
 }
 
 // suffix ----------------------
 
 %suffix_12_1 {
-	@include suffix(12,1);
+  @include suffix(12,1);
 }
 
 %suffix_12_2 {
-	@include suffix(12,2);
+  @include suffix(12,2);
 }
 
 %suffix_12_3 {
-	@include suffix(12,3);
+  @include suffix(12,3);
 }
 
 // prefix ----------------------
 
 %prefix_12_1 {
-	@include prefix(12,1);
+  @include prefix(12,1);
 }
 
 %prefix_12_2 {
-	@include prefix(12,2);
+  @include prefix(12,2);
 }
 
 %prefix_12_3 {
-	@include prefix(12,3);
+  @include prefix(12,3);
 }
 
 
 // push ----------------------
 
 %push_12_1 {
-	@include push(12,1);
+  @include push(12,1);
 }
 
 %push_12_2 {
-	@include push(12,2);
+  @include push(12,2);
 }
 
 %push_12_3 {
-	@include push(12,3);
+  @include push(12,3);
 }
 
 // pull ----------------------
 
 %pull_12_1 {
-	@include pull(12,1);
+  @include pull(12,1);
 }
 
 %pull_12_2 {
-	@include pull(12,2);
+  @include pull(12,2);
 }
 
 %pull_12_3 {
-	@include pull(12,3);
+  @include pull(12,3);
 }
 
 // alpha / omega ----------------------
 
 %alpha {
-	@include alpha;
+  @include alpha;
 }
 
 %omega {
-	@include omega;
+  @include omega;
 }
