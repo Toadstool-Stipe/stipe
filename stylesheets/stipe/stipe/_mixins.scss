@@ -97,6 +97,28 @@ $inset_shadow: em($ih-shadow) em($iv-shadow) em($iblur) em($is-shadow);
 
 
 
+////////// style placeholder text //////////
+// deprecation alert!!!! this mixin will be deleted in future releases //
+@mixin placeholder_styles ($color) {
+  color: $color;
+}
+
+@mixin placeholder ($color) {
+  &::-webkit-input-placeholder {
+    @include placeholder_styles ($color);
+  }
+  &:-moz-placeholder {
+    @include placeholder_styles ($color);
+  }
+  &:-ms-input-placeholder {
+    @include placeholder_styles ($color);
+  }
+}
+// deprecation alert!!!! this mixin will be deleted in future releases //
+////////// style placeholder text //////////
+
+
+
 
 /////////// image with gradient background ////////////
 // ------------------------------------------------- //
@@ -227,26 +249,6 @@ $legacyPrefixes: $moz_webkit_support) {
   }
 }
 /////// transform arguments //////////
-
-
-
-////////// style placeholder text //////////
-@mixin placeholder_styles ($color) {
-  color: $color;
-}
-
-@mixin placeholder ($color) {
-  &::-webkit-input-placeholder {
-    @include placeholder_styles ($color);
-  }
-  &:-moz-placeholder {
-    @include placeholder_styles ($color);
-  }
-  &:-ms-input-placeholder {
-    @include placeholder_styles ($color);
-  }
-}
-////////// style placeholder text //////////
 
 
 
