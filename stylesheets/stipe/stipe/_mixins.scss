@@ -9,12 +9,12 @@
 // required default value to for vendor prefix support
 // -----------------------------------------------------
 $prefix_defaults: -moz- -webkit- -o- -ms- '' !default;
-$webkit_support: -webkit- !default;
-$moz_support: -moz- !default;
-$ms_support: -ms- !default; 
-$moz_webkit_support: -moz- -webkit- !default;
-$moz_ms_support: -moz- -ms- !default;
-$webkit_ms_support: -webkit- -ms- !default;
+$webkit_support: -webkit- '' !default;
+$moz_support: -moz- '' !default;
+$ms_support: -ms- '' !default; 
+$moz_webkit_support: -moz- -webkit- '' !default;
+$moz_ms_support: -moz- -ms- '' !default;
+$webkit_ms_support: -webkit- -ms- '' !default;
 
 
 
