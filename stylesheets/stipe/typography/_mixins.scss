@@ -2,7 +2,7 @@
 //////// heading text mixin //////////
 // ------------------------------------------------
 // default values are being set in /stipe/stylesheets/stipe/_typography.scss
-@mixin heading ($heading_size, $heading_font_family, $heading_color, $heading_font_weight) {
+@mixin heading ($heading_size: $heading_size, $heading_font_family: $heading_font_family, $heading_color: $heading_color, $heading_font_weight: $heading_font_weight) {
   font-size: em($heading_size);
   line-height: baseline($heading_size);
   margin-bottom: baseline-margin($heading_size);
