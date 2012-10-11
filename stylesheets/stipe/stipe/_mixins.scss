@@ -49,7 +49,7 @@ $inset_shadow: em($ih-shadow) em($iv-shadow) em($iblur) em($is-shadow);
   }
 }
 
-@mixin text_shadow ($shadow_color, $shadow, $prefixes: $prefix_defaults) {
+@mixin text_shadow ($shadow_color: $shadow_color, $shadow: $shadow, $prefixes: $prefix_defaults) {
   @each $prefix in $prefixes {
     #{$prefix}text-shadow: $shadow_color $shadow;
   }
