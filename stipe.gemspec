@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "0.0.4.1"
-  s.date = "2012-08-19"
+  s.version = "0.0.4.2"
+  s.date = "2012-10-11"
 
   # Gem Details
   s.name = "stipe"
@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
   # Gem Bookkeeping
   s.rubygems_version = %q{1.3.6}
   s.add_dependency("compass", [">= 0.11"])
-  s.add_dependency("sass", [">=3.2.0.alpha.247"])
+  s.add_dependency("sass", [">=3.2.1"])
 end
