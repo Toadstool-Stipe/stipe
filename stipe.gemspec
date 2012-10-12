@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "0.0.4.2"
-  s.date = "2012-10-11"
+  s.version = "0.0.4.3"
+  s.date = "2012-10-12"
 
   # Gem Details
   s.name = "stipe"
