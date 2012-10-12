@@ -37,13 +37,13 @@ $iblur:                                3 !default;                // inset blur 
 $shadow: em($h-shadow) em($v-shadow) em($blur);
 $inset_shadow: em($ih-shadow) em($iv-shadow) em($iblur) em($is-shadow);
 
-@mixin box_shadow ($shadow_color, $shadow, $prefixes: $prefix_defaults) {
+@mixin box_shadow ($shadow_color: $shadow_color, $shadow: $shadow, $prefixes: $prefix_defaults) {
   @each $prefix in $prefixes {
     #{$prefix}box-shadow: $shadow_color $shadow;
   }
 }
 
-@mixin dual_box_shadow ($shadow_color, $shadow, $inset_color, $inset_shadow, $prefixes: $prefix_defaults) {
+@mixin dual_box_shadow ($shadow_color: $shadow_color, $shadow: $shadow, $inset_color: $inset_color, $inset_shadow: $inset_shadow, $prefixes: $prefix_defaults) {
   @each $prefix in $prefixes {
     #{$prefix}box-shadow: $shadow_color $shadow, inset $inset_color $inset_shadow;
   }
@@ -82,7 +82,7 @@ $inset_shadow: em($ih-shadow) em($iv-shadow) em($iblur) em($is-shadow);
 
 /////// input_placeholder arguments /////////
 // --------------------------------------
-@mixin input_placeholder ($placeholder_color: $placeholder_color) {
+@mixin input_placeholder ($placeholder_color: $placeholder_text) {
   &::-webkit-input-placeholder {
     color: $placeholder_color;
   }
@@ -99,7 +99,7 @@ $inset_shadow: em($ih-shadow) em($iv-shadow) em($iblur) em($is-shadow);
 
 ////////// style placeholder text //////////
 // deprecation alert!!!! this mixin will be deleted in future releases //
-@mixin placeholder_styles ($color) {
+@mixin placeholder_styles ($color: $placeholder_text) {
   color: $color;
 }
 

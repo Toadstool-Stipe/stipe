@@ -27,7 +27,7 @@
 
 
 
-@mixin alert_boxes ($background_color, $padding_tb, $padding_l, $padding_r, $margin_bottom: 0) {
+@mixin alert_boxes ($background_color, $padding_tb: $grid_padding_tb, $padding_l: $grid_padding_l, $padding_r: $grid_padding_r, $margin_bottom: 0) {
   background-color: $background_color;
   @include grid(12.25, $grid_uom:combo, $grid_child: alphaomega, $grid_padding_l: $padding_l, $grid_padding_r: $padding_r);
   padding-top: #{$padding_tb / $em}em;

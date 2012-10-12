@@ -71,9 +71,10 @@ $webfont_font_family: zocial !default;
 $webfont-file: zocial-regular-webfont !default;
 $webfont_weight: normal !default;
 $webfont_style: normal !default;
+$webfont_directory: "/fonts/" !default;
 
 
-@mixin font-face($font_family: $webfont_font_family, $font-file: $webfont-file, $font_weight: $webfont_weight, $font_style: $webfont_style ) {
+@mixin font-face($font_family: $webfont_font_family, $font-file: $webfont-file, $font_weight: $webfont_weight, $font_style: $webfont_style, $webfont_directory: $webfont_directory ) {
   font-family: '#{$font_family}';
   font-style: $font_style;
   font-weight: $font_weight;
