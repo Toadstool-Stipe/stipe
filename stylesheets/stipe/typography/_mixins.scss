@@ -2,7 +2,7 @@
 //////// heading text mixin //////////
 // ------------------------------------------------
 // default values are being set in /stipe/stylesheets/stipe/_typography.scss
-@mixin heading ($heading_size, $heading_font_family, $heading_color, $heading_font_weight) {
+@mixin heading ($heading_size: $heading_size, $heading_font_family: $heading_font_family, $heading_color: $heading_color, $heading_font_weight: $heading_font_weight) {
   font-size: em($heading_size);
   line-height: baseline($heading_size);
   margin-bottom: baseline-margin($heading_size);
@@ -71,9 +71,10 @@ $webfont_font_family: zocial !default;
 $webfont-file: zocial-regular-webfont !default;
 $webfont_weight: normal !default;
 $webfont_style: normal !default;
+$webfont_directory: "/fonts/" !default;
 
 
-@mixin font-face($font_family: $webfont_font_family, $font-file: $webfont-file, $font_weight: $webfont_weight, $font_style: $webfont_style ) {
+@mixin font-face($font_family: $webfont_font_family, $font-file: $webfont-file, $font_weight: $webfont_weight, $font_style: $webfont_style, $webfont_directory: $webfont_directory ) {
   font-family: '#{$font_family}';
   font-style: $font_style;
   font-weight: $font_weight;
@@ -81,17 +82,5 @@ $webfont_style: normal !default;
   src: url('#{$webfont_directory}#{$font-file}.eot?#iefix') format('embedded-opentype'),
          url('#{$webfont_directory}#{$font-file}.woff') format('woff'),
          url('#{$webfont_directory}#{$font-file}.ttf') format('truetype'),
-         url('#{$webfont_directory}#{$font-file}.svg#ZocialRegular') format('svg');
+         url('#{$webfont_directory}#{$font-file}.svg##{$font-file}') format('svg');
 }
-
-
-
-
-
-
-
-
-
-
-
-

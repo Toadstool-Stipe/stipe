@@ -37,19 +37,19 @@ $iblur:                                3 !default;                // inset blur 
 $shadow: em($h-shadow) em($v-shadow) em($blur);
 $inset_shadow: em($ih-shadow) em($iv-shadow) em($iblur) em($is-shadow);
 
-@mixin box_shadow ($shadow_color, $shadow, $prefixes: $prefix_defaults) {
+@mixin box_shadow ($shadow_color: $shadow_color, $shadow: $shadow, $prefixes: $prefix_defaults) {
   @each $prefix in $prefixes {
     #{$prefix}box-shadow: $shadow_color $shadow;
   }
 }
 
-@mixin dual_box_shadow ($shadow_color, $shadow, $inset_color, $inset_shadow, $prefixes: $prefix_defaults) {
+@mixin dual_box_shadow ($shadow_color: $shadow_color, $shadow: $shadow, $inset_color: $inset_color, $inset_shadow: $inset_shadow, $prefixes: $prefix_defaults) {
   @each $prefix in $prefixes {
     #{$prefix}box-shadow: $shadow_color $shadow, inset $inset_color $inset_shadow;
   }
 }
 
-@mixin text_shadow ($shadow_color, $shadow, $prefixes: $prefix_defaults) {
+@mixin text_shadow ($shadow_color: $shadow_color, $shadow: $shadow, $prefixes: $prefix_defaults) {
   @each $prefix in $prefixes {
     #{$prefix}text-shadow: $shadow_color $shadow;
   }
@@ -82,7 +82,7 @@ $inset_shadow: em($ih-shadow) em($iv-shadow) em($iblur) em($is-shadow);
 
 /////// input_placeholder arguments /////////
 // --------------------------------------
-@mixin input_placeholder ($placeholder_color: $placeholder_color) {
+@mixin input_placeholder ($placeholder_color: $placeholder_text) {
   &::-webkit-input-placeholder {
     color: $placeholder_color;
   }
@@ -99,7 +99,7 @@ $inset_shadow: em($ih-shadow) em($iv-shadow) em($iblur) em($is-shadow);
 
 ////////// style placeholder text //////////
 // deprecation alert!!!! this mixin will be deleted in future releases //
-@mixin placeholder_styles ($color) {
+@mixin placeholder_styles ($color: $placeholder_text) {
   color: $color;
 }
 
@@ -311,7 +311,7 @@ $legacyPrefixes: $moz_webkit_support) {
 
 // a standardized border radius
 // ----------------------------
-@mixin standard_rounded_border ($standard_round_corner, $standard_border_style, $standard_corner_width, $standard_border_color) {
+@mixin standard_rounded_border ($standard_round_corner: $standard_round_corner, $standard_border_style: $standard_border_style, $standard_corner_width: $standard_corner_width, $standard_border_color: $standard_border_color) {
   @include border_radius(#{$standard_round_corner / $em}rem);
   border: $standard_corner_width $standard_border_style $standard_border_color;
 }
@@ -339,7 +339,7 @@ $legacyPrefixes: $moz_webkit_support) {
 // This tool is designed to be a standard spacing element between markup blocks.
 // The only value to be adjusted is the margin-bottom spacing.  This is an argument addressed 
 // in the ``_config.scss`` file
-@mixin standard_block_spacing ($default_block_spacing) {
+@mixin standard_block_spacing ($default_block_spacing: $default_block_spacing) {
   @include clearfix;
   margin-bottom: #{$default_block_spacing / $em}em;
 }
@@ -348,7 +348,7 @@ $legacyPrefixes: $moz_webkit_support) {
 
 // This mixin allows for quick application of a UI to the <hr> tag
 // All values are set in the ``_config.scss`` file
-@mixin standard_hr ($standard_border_style, $standard_hr_width, $standard_hr_spacing, $standard_hr_color){
+@mixin standard_hr ($standard_border_style: $standard_border_style, $standard_hr_width: $standard_hr_width, $standard_hr_spacing: $standard_hr_spacing, $standard_hr_color: $standard_hr_color){
   border-bottom: $standard_hr_width $standard_border_style $standard_hr_color;
   padding-bottom: #{$standard_hr_spacing / $em}rem;
   margin-bottom: #{$standard_hr_spacing / $em}rem;
@@ -358,18 +358,18 @@ $legacyPrefixes: $moz_webkit_support) {
 
 // This series of mixins sets default values for consistant use of text and box shadows
 // throughout your site.  Values are set in the ``_config.scss`` file
-@mixin primary_text_shadow ($h-shadow, $v-shadow, $blur ) {
+@mixin primary_text_shadow ($h-shadow: $h-shadow, $v-shadow: $v-shadow, $blur: $blur) {
   @include text_shadow ($shadow_color, #{$h-shadow / $em}em #{$v-shadow / $em}em #{$blur / $em}em);
 }
 
-@mixin disabled_text_shadow ($h-shadow, $v-shadow, $blur ) {
+@mixin disabled_text_shadow ($h-shadow: $h-shadow, $v-shadow: $v-shadow, $blur: $blur) {
   @include text_shadow (fade-out($shadow_color, 0.5), #{$h-shadow / $em}em #{$v-shadow / $em}em #{$blur / $em}em);
 }
 
-@mixin primary_box_shadow ($h-shadow, $v-shadow, $blur ) {
+@mixin primary_box_shadow ($h-shadow: $h-shadow, $v-shadow: $v-shadow, $blur: $blur) {
   @include box_shadow ($shadow_color, #{$h-shadow / $em}em #{$v-shadow / $em}em #{$blur / $em}em);
 }
 
-@mixin disabled_box_shadow ($h-shadow, $v-shadow, $blur ) {
+@mixin disabled_box_shadow ($h-shadow: $h-shadow, $v-shadow: $v-shadow, $blur: $blur) {
   @include box_shadow (fade-out($shadow_color, 0.4), #{$h-shadow / $em}em #{$v-shadow / $em}em #{$blur / $em}em);
 }
