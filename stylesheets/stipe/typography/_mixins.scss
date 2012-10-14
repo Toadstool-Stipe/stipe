@@ -82,17 +82,5 @@ $webfont_directory: "/fonts/" !default;
   src: url('#{$webfont_directory}#{$font-file}.eot?#iefix') format('embedded-opentype'),
          url('#{$webfont_directory}#{$font-file}.woff') format('woff'),
          url('#{$webfont_directory}#{$font-file}.ttf') format('truetype'),
-         url('#{$webfont_directory}#{$font-file}.svg#ZocialRegular') format('svg');
+         url('#{$webfont_directory}#{$font-file}.svg##{$font-file}') format('svg');
 }
-
-
-
-
-
-
-
-
-
-
-
-
