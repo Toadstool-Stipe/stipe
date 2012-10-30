@@ -17,6 +17,11 @@ $border_place: '';
 		$col_width: 60 - $col_gutter;
 		@include the_grid($col_count, $col_width, $grid_uom, $grid_padding_l, $grid_padding_r, $grid_padding_tb, $grid_border, $grid_child, $col_gutter, $grid_align, $grid_context, $border_color, $border_place);
 	}
+	@else if $grid_type == 24 {
+		$col_width: 40 - $col_base;
+		$col_gutter: $col_base;
+		@include the_grid($col_count, $col_width, $grid_uom, $grid_padding_l, $grid_padding_r, $grid_padding_tb, $grid_border, $grid_child, $col_gutter, $grid_align, $grid_context, $border_color, $border_place);
+	}
 }
 
 /////////// main content dusplay box //////////////

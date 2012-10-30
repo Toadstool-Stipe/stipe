@@ -16,6 +16,12 @@ Stipe is a Compass Extension, so Compass is set as a depdency. You will need to 
 For [reasons explained](/Anotheruiguy/toadstool/blob/master/doc-src/exploited-bug.md) please continue using the alpha gem and upgrading to Sass 3.2 will break Toadstool and Stipe. 
 
 # Stipe Changelog
+## 0.0.4.6
+* Updated grid system to support 24 col grid solution 
+
+## 0.0.4.5
+* Addressed all compatibility issues with Sass 3.2 
+
 ## 0.0.4.1
 * Addressed bug with vendor prefix variables 
 
