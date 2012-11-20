@@ -10,23 +10,28 @@
 }
 
 %headings_2 {
-  @include heading($heading_2);
+  @extend %headings_1;
+  @include text($heading_2);
 }
 
 %headings_3 {
-  @include heading($heading_3);
+  @extend %headings_1;
+  @include text($heading_3);
 }
 
 %headings_4 {
-  @include heading($heading_4);
+  @extend %headings_1;
+  @include text($heading_4);
 }
 
 %headings_5 {
-  @include heading($heading_5);
+  @extend %headings_1;
+  @include text($heading_5);
 }
 
 %headings_6 {
-  @include heading($heading_6);
+  @extend %headings_1;
+  @include text($heading_6);
 }
 
 
