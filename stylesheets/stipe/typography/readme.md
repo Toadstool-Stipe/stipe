@@ -1,6 +1,6 @@
 #General typography
 
-Much of your Typography has already been addressed with Toadstool. Simply use Toadstool's config file to address your '$font_size, $heading_1 - 6, $small_point_size and $large_point_size'. As well designate your `$primary_font_family, $secondary_font_family and $heading_font_family` variables.
+Much of your Typography has already been addressed with Toadstool. Simply use Toadstool's config file to address your `$font_size, $heading_1 - 6, $small_point_size and $large_point_size`. As well designate your `$primary_font_family, $secondary_font_family and $heading_font_family` variables.
 
 It should be noted that Toadstool DOES NOT USE PIXELS for any values. At any time you need use a width/height/size value, use Stipe's [em function](http://goo.gl/rK2Ae), for example: `font-size: em(12);`.
 
