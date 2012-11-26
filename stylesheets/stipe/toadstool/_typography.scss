@@ -47,6 +47,18 @@ html {
 	}
 }
 
+// This is used to keep heading examples from poorly wrapping in mobile
+.element_example {
+  @media #{$mobile} {
+    h1, h2, h3, h4, h5, h6 {
+    	width: auto;
+    	white-space: nowrap;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+    }
+  }
+}
+
 
 
 h3 {
