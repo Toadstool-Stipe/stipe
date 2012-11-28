@@ -1,5 +1,5 @@
 ////////////// Form mixins ////////////////
-@mixin input_fields($height: 3em, $padding: 6, $font-size: $large_point_size) {
+@mixin input_fields($height: $form_field_height, $padding: $form_field_padding, $font-size: $large_point_size) {
   border: 1px solid $form_field_border;
   background: $form_field_background_color;
   font-size: em($font-size);

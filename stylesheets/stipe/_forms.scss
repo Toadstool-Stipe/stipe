@@ -21,6 +21,9 @@ $form_field_text_fail:          $alpha_color !default;
 $instructional_text:            $charlie_gray !default;
 $placeholder_text:              $hotel_gray !default;
 $form_label_color:              $alpha_gray !default;
+$form_label_weight:             bold !default;
+$form_field_height:             3em !default;
+$form_field_padding:            6 !default;
 
 @import "forms/mixins";
 @import "forms/extends";

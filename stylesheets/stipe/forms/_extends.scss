@@ -19,8 +19,9 @@
 // ------------------------------------------------------------
 %form_labels {
   display: block;
-  font-weight: bold;
+  font-weight: $form_label_weight;
   line-height: em(20);
+  color: $form_label_color;
   span {
     padding-left: .25em;
     font-weight: normal;
