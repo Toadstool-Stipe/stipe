@@ -3,7 +3,7 @@
 Much of your Typography has already been addressed with Toadstool. Simply use [Toadstool's config file](http://goo.gl/PqQSK) to address your `$font_size, $heading_1 - 6, $small_point_size and $large_point_size`. As well designate your `$primary_font_family, $secondary_font_family and $heading_font_family` variables.
 
 ##Typography functions
-The functions indludes here are the part of Toadstool's design foundation. Functions for calculating `em` and `rem` values as well as calculating baseline heights for vertical rhythm. 
+The functions indluded here are the part of Toadstool's design foundation. Functions for calculating `em` and `rem` values as well as calculating baseline heights for vertical rhythm. 
 
 ##Typography defaults
 How does this work? Stipe's typography library contains a `_default.scss` file that is carried into the Toadstool project via the [_typograhy.scss](http://goo.gl/1YrDS) file. This file contains the basic bootstrap stylings for `html`, `h1-h6`, `p`, `b`, and `a` tags. Toadstool's [_typography.scss](http://goo.gl/d9yvC) file will mirror the default settings from Stipe. Feel free to edit as necessary, but I have found these pre-defined styles to be pretty stable. 
