@@ -4,6 +4,7 @@
   background: $form_field_background_color;
   font-size: em($font-size);
   height: em($height);
+  @include border_radius(em($form_field_border_radius));
   @include grid(12.25, alphaomega, $grid_padding_l:$padding, $grid_padding_r:$padding);
   @include input_placeholder($placeholder_text);
 
@@ -46,6 +47,17 @@
   }
 }
 
+@mixin inline_alert {
+  line-height: em($inline_alert_lineheight);
+  font-weight: $inline_alert_weight;
+  @include border_radius(em($form_field_border_radius));
+  border: #{$inline_alert_border_width}px $standard_border_style $form_field_border_fail;
+  padding-left: em($inline_alert_left_padding);
+  background: $inline_alert_bkg_color;
+  color: $inline_alert_text_color;
+  margin-top: em($inline_alert_top_margin);
+}
+
 // this mixin need to be refactored for use
 @mixin alert_boxes ($background_color, $padding_tb: $grid_padding_tb, $padding_l: $grid_padding_l, $padding_r: $grid_padding_r, $margin_bottom: 0) {
   background-color: $background_color;
@@ -84,4 +96,6 @@
 
 @mixin instructional {
   color: $instructional_text;
+  line-height: 1.5em;
+  margin-top: 0.5em;
 }

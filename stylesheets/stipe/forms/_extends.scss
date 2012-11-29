@@ -28,6 +28,12 @@
   @include instructional;
 }
 
+// inline form alert UI
+// ------------------------------------------------------------
+%inline_alert {
+  @include inline_alert;
+}
+
 
 // notification alerts / panels 
 // ------------------------------------------------------------
