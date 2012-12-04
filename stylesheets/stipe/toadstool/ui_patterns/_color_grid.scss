@@ -1,38 +1,54 @@
 // Toadstool's view
 // ----------------------------------------------
 article.colorcode {
-	@include grid(6);
+	margin-bottom: 2em;
+	@extend %clearfix;
 	@media #{$mobile} {
 		@include grid(4, $grid_context: 4);
 	}
+	.toadstool_subheader {
+		margin-bottom: 1em;
+	}
 	div {
 		width: 60%; 
-		margin-bottom: 2em; 
 		min-height: em(30); 
 		float: left;
+		font-weight: bold;
 		@include box_sizing;
+		span {
+			display: inline-block;
+			margin-left: 1em;
+			font-weight: normal;
+		}
 	}
 	p {
 		position: relative; 
 		left: 105%; 
-		font-weight: normal;
 		margin-bottom: 0;
 		width: 50%;
+		line-height: 3em;
 	}
 	.border {
 		@include box_shadow (inset $alpha_gray, 0 0 1px);
 	}
+	@media #{$mobile} {
+		div {
+			width: 100%;
+			span {
+				display: block;
+				margin: 0;
+			}
+		}
+		p {
+			color: white;
+			left: 0;
+			margin: em(10) 0 em(10) em(10);
+			line-height: 1.5em;
+			text-shadow: 2px 2px 4px black;
+		}
+	}
 }
 
-//.color_block {
-//	@include grid(6);
-//	&:nth-child(odd) {
-//		margin-left: 0;
-//	}
-//	&:nth-child(even) {
-//		margin-right: 0;
-//	}
-//}
 
 /////// OOCSS color blocks ////////
 // ----------------------------------------------
