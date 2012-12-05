@@ -1,6 +1,22 @@
 #Legacy Change log
 if you care ...
 
+
+## 0.0.4.8
+* Updated typography extends to better minimize headings styles
+
+## 0.0.4.6
+* Updated grid system to support 24 col grid solution 
+
+## 0.0.4.5
+* Addressed all compatibility issues with Sass 3.2 
+
+## 0.0.4.1
+* Addressed bug with vendor prefix variables 
+
+## 0.0.4.0
+* Deprecated legacy `@mixin placeholder` Will be deleted from future releases of the library
+
 ## 0.0.3.9
 * Addressed no-boxsizing calculation in grid to account for a border on a single side
 * Added support for a grid debug view

@@ -12,23 +12,11 @@ To use the Stipe gem, using Bundler `gem 'stipe'`
 Stipe is a Compass Extension, so Compass is set as a depdency. You will need to include `require 'stipe'` in your config.rb file.
 
 # Stipe Changelog
+## 0.0.5.2
+* UI adjustments to `color_palettes` view
+
 ## 0.0.5.1
 * Adding new configutation support for form UI
 
 ## 0.0.5.0
 * Updated stipe manifest to allow for single import
-
-## 0.0.4.8
-* Updated typography extends to better minimize headings styles
-
-## 0.0.4.6
-* Updated grid system to support 24 col grid solution 
-
-## 0.0.4.5
-* Addressed all compatibility issues with Sass 3.2 
-
-## 0.0.4.1
-* Addressed bug with vendor prefix variables 
-
-## 0.0.4.0
-* Deprecated legacy `@mixin placeholder` Will be deleted from future releases of the library
