@@ -4,7 +4,7 @@ The following is a growing list of awesome work from others that I felt would be
 ##Retinafy your website with Sass & Compass
 Inspired by Kaelig's [`hidpi()` mixin](https://github.com/kaelig/hidpi) and [Tim Kadlec's work](http://timkadlec.com/2012/04/media-query-asset-downloading-results/) on optimizing the delivering of images, Stipe supports a simple mixing to 'retinafy' your site.
 
-##How to use
+###How to use
 Using Stipe's hidpi support you can either retinafy common elements in the UI or serve up different images.  
 
 ###hidpi common elements
