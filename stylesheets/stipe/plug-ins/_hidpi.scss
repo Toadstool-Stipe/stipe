@@ -1,0 +1,34 @@
+// kaelig / hidpi
+// https://github.com/kaelig/hidpi
+// hidpi() is a Sass mixin that serves high resolution graphics to high density (Retina-like) displays
+
+// *! HiDPI v1 | MIT License | git.io/hidpi */
+
+$extension: png !default;
+
+@mixin hidpi($image: false, $extension: $extension) {
+  @if $image {
+    background: url('#{$imgDir}#{$image}.#{$extension}') no-repeat;
+  }
+  // @else {
+  //   //@content;
+  // }
+  @media #{$hidpi} {
+    @if $image {
+      $image-hidpi-fullname: '#{$imgDir}#{$image}_x2.#{$extension}';
+      background: url($image-hidpi-fullname) no-repeat;
+      @content;
+    } 
+    @else {
+      @content;
+    }
+  }
+}
+
+@mixin hidpi-image ($image: false, $width: false, $height: false, $extension: $extension) {
+  width: em($width);
+  height: em($height);
+  @include hidpi ($image, $extension) {
+    background-size: em($width) em($height);
+  }
+}
