@@ -12,6 +12,9 @@ To use the Stipe gem, using Bundler `gem 'stipe'`
 Stipe is a Compass Extension, so Compass is set as a depdency. You will need to include `require 'stipe'` in your config.rb file.
 
 # Stipe Changelog
+## 0.0.5.3
+* Added new feature for hidpi image management
+
 ## 0.0.5.2
 * UI adjustments to `color_palettes` view
 
