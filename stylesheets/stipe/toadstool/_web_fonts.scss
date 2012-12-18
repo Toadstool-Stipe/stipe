@@ -24,9 +24,3 @@ $webfont_directory: "/fonts/" !default; // edit this directory in the '_config.s
 //@font-face {
 //	@include font-face ($font_family: [name of family], $font-file:  [name of file], $font_weight: [value], $font_style: [value]);
 //}
-
-
-
-// Install google fonts
-// -----------------------------------------------------------
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
