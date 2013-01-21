@@ -15,14 +15,14 @@
 	}
 	div {
 		@include box_sizing;
-		width: 60%; 
+		//width: 60%; 
 		float: left;
 		font-weight: bold;
-		width: em(100);
-		height: em(100);
+		width: em(75);
+		height: em(75);
 		border-radius: 50%;
 		margin: 0 0 em(20) 0;
-		margin-right: 22%;
+		margin-right: 25%;
 		border: 1px solid $white;
 		box-shadow: 0 0 em(10) em(3) $shadow_color;
 		span {
@@ -358,4 +358,30 @@
 
 .standard_hr_color {
 	@extend %standard_hr_color;
+}
+
+/////// Config defaults for forms /////// 
+// -----------------------------------------------------------------------------
+.alert_background_color {
+	@extend %alert_background_color;
+}
+
+.input_disabled {
+	@extend %input_disabled;
+}
+
+.input_disabled_bkg {
+	@extend %input_disabled_bkg;
+}
+
+.input_disabled_border {
+	@extend %input_disabled_border;
+}
+
+.input_disabled_text {
+	@extend %input_disabled_text;
+}
+
+.form_field_background_color {
+	@extend %form_field_background_color;
 }
