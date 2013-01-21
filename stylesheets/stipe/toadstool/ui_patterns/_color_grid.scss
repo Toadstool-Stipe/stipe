@@ -1,7 +1,7 @@
 // Toadstool's view
 // ----------------------------------------------
-article.colorcode {
-	margin-bottom: 2em;
+.colorcode {
+	margin-bottom: 2.5em;
 	@extend %clearfix;
 	@media #{$mobile} {
 		@include grid(4, $grid_context: 4);
@@ -9,24 +9,33 @@ article.colorcode {
 	.toadstool_subheader {
 		margin-bottom: 1em;
 	}
+	section {
+		padding: em(10) 0 0 em(10);
+		margin: em(-10) 0 0 em(-10);
+	}
 	div {
+		@include box_sizing;
 		width: 60%; 
-		min-height: em(30); 
 		float: left;
 		font-weight: bold;
-		@include box_sizing;
+		width: em(100);
+		height: em(100);
+		border-radius: 50%;
+		margin: 0 0 em(20) 0;
+		margin-right: 22%;
+		border: 1px solid $white;
+		box-shadow: 0 0 em(10) em(3) $shadow_color;
 		span {
 			display: inline-block;
-			margin-left: 1em;
 			font-weight: normal;
 		}
 	}
 	p {
 		position: relative; 
-		left: 105%; 
+		left: 120%; 
+		margin-top: 20%;
 		margin-bottom: 0;
 		width: 50%;
-		line-height: 3em;
 	}
 	.border {
 		@include box_shadow (inset $alpha_gray, 0 0 1px);
@@ -34,10 +43,17 @@ article.colorcode {
 	@media #{$mobile} {
 		div {
 			width: 100%;
+			border-radius: 0;
+			margin-bottom: em(10);
+			box-shadow: 0 0 em(5) em(0) $shadow_color;
 			span {
 				display: block;
 				margin: 0;
 			}
+		}
+		section {
+			position: relative;
+			top: em(-10);
 		}
 		p {
 			color: white;
@@ -277,65 +293,69 @@ article.colorcode {
 /////// semantic color blocks ////////
 // ----------------------------------------------
 .white {
-	background: $white;
+	@extend %white;
 }
 
 .shadow_color {
-	background: $shadow_color;
+	@extend %shadow_color;
 }
 
 .primary_header_color {
-	background: $primary_header_color;
+	@extend %primary_header_color;
 }
 
 .heading_font_weight {
-	background: $heading_font_weight;
+	@extend %heading_font_weight;
 }
 
 .primary_text {
-	background: $primary_text;
+	@extend %primary_text;
+}
+
+.secondary_text {
+	@extend %secondary_text;
 }
 
 .href_color {
-	background: $href_color;
+	@extend %href_color;
 }
 
 .ins_color {
-	background: $ins_color;
+	@extend %ins_color;
 }
 
 .mark_color {
-	background: $mark_color;
+	@extend %mark_color;
 }
 
 .webkit_tap_hightlight {
-	background: $webkit_tap_hightlight;
+	@extend %webkit_tap_hightlight;
 }
 
 .selection_color {
-	background: $selection_color;
+	@extend %selection_color;
 }
 
 .selection_text_color {
-	background: $selection_text_color;
+	@extend %selection_text_color;
 }
 
 .border_color {
-	background: $border_color;
+	@extend %border_color;
 }
 
 .primary_button_border_color {
-	background: $primary_button_border_color;
+	@extend %primary_button_border_color;
 }
 
 .secondary_button_border_color {
-	background: $secondary_button_border_color;
+	@extend %secondary_button_border_color;
 }
 
 .button_text {
-	background: $button_text;
+	@extend %button_text;
 }
 
 .standard_hr_color {
-	background: $standard_hr_color;
+	@extend %standard_hr_color;
 }

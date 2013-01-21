@@ -39,7 +39,11 @@ html {
 	}
 	h2 {
 		@extend %headings_2;
-		color: $alpha_primary;
+		color: $charlie_gray;
+		a {
+			font-size: 0.8em;
+			margin-left: em(5);
+		}
 	}
 	p, ul {
 		color: $charlie_gray;
