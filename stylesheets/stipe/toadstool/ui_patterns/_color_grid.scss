@@ -385,3 +385,15 @@
 .form_field_background_color {
 	@extend %form_field_background_color;
 }
+
+.form_field_focus_color {
+	@extend %form_field_focus_color;
+}
+
+.form_field_fail_bkg {
+	@extend %form_field_fail_bkg;
+}
+
+.form_field_border {
+	@extend %form_field_border;
+}
