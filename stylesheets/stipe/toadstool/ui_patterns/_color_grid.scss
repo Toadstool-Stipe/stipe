@@ -21,10 +21,7 @@
 		width: em(75);
 		height: em(75);
 		border-radius: 50%;
-		//margin: 0 0 em(20) 0;
-		//margin-right: 25%;
-		//margin: 0 em(100) em(70) em(10);
-		margin: 0px 50px 70px 50px;
+		margin: 0 em(50) em(70) em(50);
 		border: 1px solid $white;
 		box-shadow: 0 0 em(10) em(3) $shadow_color;
 		span {
@@ -33,11 +30,6 @@
 		}
 	}
 	p {
-		//position: relative; 
-		//left: 120%; 
-		//margin-top: em(85);
-		//margin-bottom: 0;
-		//width: 50%;
 		margin-bottom: 0;
 		margin-left: -25px;
 		width: 125px;
@@ -51,9 +43,10 @@
 			width: 100%;
 			border-radius: 0;
 			margin-bottom: em(10);
-			box-shadow: 0 0 em(5) em(0) $shadow_color;
+			box-shadow: 0 0 em(7) em(0) $shadow_color;
+			margin-left: 0;
+			text-align: left;
 			span {
-				display: block;
 				margin: 0;
 			}
 		}
