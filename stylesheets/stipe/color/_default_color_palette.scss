@@ -50,7 +50,7 @@ $mark_color:            yellow !default;
 $webkit_tap_hightlight: $delta_color_bravo !default;
 
 // overrides the default content selection color in the browser
-$selection_color:       yellow !default;
+$selection_color:       lighten($alpha_color, 50%) !default;
 $selection_text_color:  $primary_text !default;
 
 // default border color
