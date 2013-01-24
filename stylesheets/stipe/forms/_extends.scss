@@ -24,13 +24,13 @@
 
 // instructional text
 // ------------------------------------------------------------
-%instructional {
+%stipe_instructional {
   @include instructional;
 }
 
 // inline form alert UI
 // ------------------------------------------------------------
-%inline_alert {
+%stipe_inline_alert {
   @include inline_alert;
 }
 
@@ -39,34 +39,34 @@
 // ------------------------------------------------------------
 // these extend need to be refactored for use
 // see mixin as well
-%default_alert_panel {
-  @include alert_boxes ($alert_background_color, 10, 14, 10);
-}
+// %default_alert_panel {
+//   @include alert_boxes ($alert_background_color, 10, 14, 10);
+// }
 
-%notification_panel {
-  @extend %default_alert_panel;
-}
+// %notification_panel {
+//   @extend %default_alert_panel;
+// }
 
-%alert_panel {
-  @extend %default_alert_panel;
-  background: $alpha_color;
-  color: $white;
-  font-weight: bold;
-}
+// %alert_panel {
+//   @extend %default_alert_panel;
+//   background: $alpha_color;
+//   color: $white;
+//   font-weight: bold;
+// }
 // these extend need to be refactored for use
 
 
 // form text 
 // ------------------------------------------------------------
 // These all need to be refacotred to see if they are really necessary
-%note {
-  @extend %instructional;
-  @include small;
-  margin-top: #{5 / $em}em;
-}
+// %note {
+//   @extend %instructional;
+//   @include small;
+//   margin-top: #{5 / $em}em;
+// }
 
-%informational {
-  @extend %instructional;
-  line-height: 1.3em;
-  margin-bottom: 1em;
-}
+// %informational {
+//   @extend %instructional;
+//   line-height: 1.3em;
+//   margin-bottom: 1em;
+// }
