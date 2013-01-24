@@ -51,13 +51,15 @@
 {
     color: purple;
 }
+
 pre.prettyprint
 {
+  font-size: em(14);
+  @media #{$mobile} {
     font-size: em(14);
-    @media #{$mobile} {
-      font-size: em(14);
-    }
+  }
 }
+
 ol.linenums
 {
     margin-top: 0;
@@ -67,7 +69,7 @@ ol.linenums
 .example_code {
   background: $bravo_gray;
   @include border_radius(em(5));
-  padding: em(10) em(10) 0 em(20);
+  padding: em(10) em(10) 0 em(10);
   margin-bottom: em(20);
   @include grid(12);
   line-height: 1.5em;
@@ -101,6 +103,13 @@ ol.linenums
     width: 100%;
     font-size: 0.9em;
     text-align: right;
+  }
+  [contenteditable] {
+    margin-bottom: em(10);
+    padding-left: em(10);
+    &:focus {
+      outline: 1px solid green;
+    }
   }
 }
 

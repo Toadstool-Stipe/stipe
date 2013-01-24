@@ -1,24 +1,24 @@
 // input fields
 // ------------------------------------------------------------
-%input_fields {
+%stipe_input_fields {
   @include input_fields;
 }
 
 // disabled input fields
 // ------------------------------------------------------------
-%disabled_inputs {
+%stipe_disabled_inputs {
   @include disabled_inputs;
 }
 
 // form labels 
 // ------------------------------------------------------------
-%form_labels {
+%stipe_form_labels {
   @include form_labels;
 }
 
 // default error
 // ------------------------------------------------------------
-%fail {
+%stipe_fail {
   @include fail;
 }
 
