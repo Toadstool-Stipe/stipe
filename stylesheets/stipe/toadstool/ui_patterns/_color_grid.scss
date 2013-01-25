@@ -77,6 +77,8 @@
 }
 
 
+// To add new colors to the extended color loops below, simply add to the appropiate list
+
 // Standard grayscale objects - in color view
 // ----------------------------------------------
 $color_names: alpha_gray 
@@ -162,20 +164,57 @@ echo_color_juliet;
 /////// semantic color blocks ////////
 // ----------------------------------------------
 // Typography, borders, rules and shadows
-$color_names: white primary_header_color primary_text secondary_text href_color shadow_color border_color standard_hr_color standard_border_color;
+$color_names: 
+white 
+primary_header_color 
+primary_text 
+secondary_text href_color
+shadow_color border_color
+standard_hr_color 
+standard_border_color;
 @include extend_color_loop;
 
 
 /////// Config defaults for forms /////// 
 // ----------------------------------------------
-$color_names: alert_background_color primary_button_border_color secondary_button_border_color button_text input_disabled input_disabled_bkg input_disabled_border input_disabled_text form_field_background_color form_field_focus_color form_field_fail_bkg form_field_border form_field_border_fail form_field_focus_border_color form_field_text_fail form_label_color optional_field_text_color instructional_text placeholder_text inline_alert_bkg_color inline_alert_text_color;
+$color_names: 
+alert_background_color 
+primary_button_border_color 
+secondary_button_border_color 
+button_text 
+input_disabled 
+input_disabled_bkg 
+input_disabled_border 
+input_disabled_text 
+form_field_background_color 
+form_field_focus_color 
+form_field_fail_bkg 
+form_field_border 
+form_field_border_fail 
+form_field_focus_border_color 
+form_field_text_fail 
+form_label_color 
+optional_field_text_color 
+instructional_text 
+placeholder_text 
+inline_alert_bkg_color 
+inline_alert_text_color;
 @include extend_color_loop;
 
 /////// Config defaults for buttons /////// 
 // ----------------------------------------------
-$color_names: primary_button_border_color secondary_button_border_color button_text;
+$color_names: 
+button_color 
+primary_button_border_color 
+secondary_button_border_color 
+button_text;
 @include extend_color_loop;
 
 // HTML5 colors
-$color_names: webkit_tap_hightlight ins_color selection_color selection_text_color mark_color;
+$color_names: 
+webkit_tap_hightlight 
+ins_color 
+selection_color 
+selection_text_color 
+mark_color;
 @include extend_color_loop;

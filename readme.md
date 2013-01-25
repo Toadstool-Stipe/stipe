@@ -19,6 +19,9 @@ Stipe is a Compass Extension, so Compass is set as a depdency. You will need to 
 * Updates to `/stipe/stylesheets/stipe/toadstool/ui_patterns/_color_grid.scss`
 	* Added new `extend_color_loop` mixin
 	* Dynamically looping through list of OOCSS names to create color block classes
+*  New `extend_color_loop` mixin 
+	* Added to `/stipe/stylesheets/stipe/toadstool/ui_patterns/_color_grid.scss`
+	* All extends generated in memory from lists of objects
 
 ###0.0.5.5
 * Fixed order of `@imports` in `_manifest.scss`
