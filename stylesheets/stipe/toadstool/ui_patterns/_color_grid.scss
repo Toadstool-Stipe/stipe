@@ -1,79 +1,79 @@
 // Toadstool's view
 // ----------------------------------------------
 .colorcode {
-	margin-bottom: 1.5em;
-	@extend %clearfix;
-	@media #{$mobile} {
-		@include grid(4, $grid_context: 4);
-	}
-	.toadstool_subheader {
-		margin-bottom: 1em;
-	}
-	section {
-		padding: em(10) 0 0 em(10);
-		margin: em(-10) 0 0 em(-10);
-	}
-	div {
-		@include box_sizing; 
-		text-align: center;
-		float: left;
-		font-weight: bold;
-		width: em(75);
-		height: em(75);
-		border-radius: 50%;
-		margin: 0 em(50) em(70) em(50);
-		border: 1px solid $white;
-		box-shadow: 0 0 em(10) em(3) $shadow_color;
-		span {
-			display: block;
-			font-weight: normal;
-		}
-	}
-	p {
-		margin-bottom: 0;
-		margin-left: -25px;
-		width: 125px;
-		margin-top: 85px;
-	}
-	.border {
-		@include box_shadow (inset $alpha_gray, 0 0 1px);
-	}
-	@media #{$mobile} {
-		div {
-			width: 100%;
-			border-radius: 0;
-			margin-bottom: em(10);
-			box-shadow: 0 0 em(7) em(0) $shadow_color;
-			margin-left: 0;
-			text-align: left;
-			span {
-				margin: 0;
-			}
-		}
-		section {
-			position: relative;
-			top: em(-10);
-		}
-		p {
-			color: white;
-			left: 0;
-			margin: em(10) 0 em(10) em(10);
-			line-height: 1.5em;
-			text-shadow: 2px 2px 4px black;
-		}
-	}
+  margin-bottom: 1.5em;
+  @extend %clearfix;
+  @media #{$mobile} {
+    @include grid(4, $grid_context: 4);
+  }
+  .toadstool_subheader {
+    margin-bottom: 1em;
+  }
+  section {
+    padding: em(10) 0 0 em(10);
+    margin: em(-10) 0 0 em(-10);
+  }
+  div {
+    @include box_sizing; 
+    text-align: center;
+    float: left;
+    font-weight: bold;
+    width: em(75);
+    height: em(75);
+    border-radius: 50%;
+    margin: 0 em(50) em(70) em(50);
+    border: 1px solid $white;
+    box-shadow: 0 0 em(10) em(3) $shadow_color;
+    span {
+      display: block;
+      font-weight: normal;
+    }
+  }
+  p {
+    margin-bottom: 0;
+    margin-left: -25px;
+    width: 125px;
+    margin-top: 85px;
+  }
+  .border {
+    @include box_shadow (inset $alpha_gray, 0 0 1px);
+  }
+  @media #{$mobile} {
+    div {
+      width: 100%;
+      border-radius: 0;
+      margin-bottom: em(10);
+      box-shadow: 0 0 em(7) em(0) $shadow_color;
+      margin-left: 0;
+      text-align: left;
+      span {
+        margin: 0;
+      }
+    }
+    section {
+      position: relative;
+      top: em(-10);
+    }
+    p {
+      color: white;
+      left: 0;
+      margin: em(10) 0 em(10) em(10);
+      line-height: 1.5em;
+      text-shadow: 2px 2px 4px black;
+    }
+  }
 }
 
 
 /////// OOCSS color blocks ////////
 // ----------------------------------------------
 @mixin extend_color_loop {
-	@each $name in $color_names {
-	  $i: index($color_names, $name);
-	  .#{$name} {
-	    @extend %#{nth($color_names, $i)};
-	  }
-	}
+  @each $name in $color_names {
+    $i: index($color_names, $name);
+    .#{$name} {
+      @extend %#{nth($color_names, $i)};
+    }
+  }
 }
 
 
