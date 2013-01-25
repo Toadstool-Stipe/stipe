@@ -1,18 +1,2 @@
 // Default display Stipe buttons
 // ---------------------------------------------------------
-
-// This code is pretty much depricated until it can be used better
-
-// @import 'lib/cupid-green';
-// @import 'lib/minimal';
-
-// %default-stipe_buttons {
-// 	@extend %cupid-green;
-// 	margin-right: em(10);
-// 	&:last-child {
-// 		margin: 0;
-// 	}
-// 	&:nth-child(n+2) {
-// 		@extend %minimal;
-// 	}
-// }

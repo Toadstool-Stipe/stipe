@@ -16,9 +16,8 @@ Stipe is a Compass Extension, so Compass is set as a depdency. You will need to 
 * Over-hauled color palette CSS
 * Updated forms extends to include `stipe_` in the name to increase visibility of where code is coming from in Toadstool
 * Added UI for `contenteditable` new functionality 
-* Deprecated support for other button libraries
-	* Code is still there, just need to decide on 100% supporting them or not, this 1/2 way crap isn't awesome
-* New button mixins for generating a single button gradient based off Ultimate CSS Gradient Generator 
+* Old button lib is dead
+* All new buttons is alive
 * Updates to `/stipe/stylesheets/stipe/toadstool/ui_patterns/_color_grid.scss`
 	* Added new `extend_color_loop` mixin
 	* Dynamically looping through list of OOCSS names to create color block classes
