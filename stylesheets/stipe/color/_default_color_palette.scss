@@ -59,7 +59,14 @@ $border_color:                         $charlie_gray !default;
 
 // Config defaults for buttons
 // -----------------------------------------------------------------------------
-$button-color:                         $bravo-color !default;
-$primary_button_border_color:          $bravo_color !default;
+$button-color:                         $delta-color !default;
 $secondary_button_border_color:        $bravo_gray !default;
 $button_text:                          $white !default;
+
+// Depricated variable
+$primary_button_border_color:          $bravo_color !default;
+
+
+
+
+
