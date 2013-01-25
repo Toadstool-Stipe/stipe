@@ -12,20 +12,28 @@ To use the Stipe gem, using Bundler `gem 'stipe'`
 Stipe is a Compass Extension, so Compass is set as a depdency. You will need to include `require 'stipe'` in your config.rb file.
 
 # Stipe Changelog
-## 0.0.5.5
+###0.0.5.6
+* Over-hauled color palette CSS
+* Updated forms extends to include `stipe_` in the name to increase visibility of where code is coming from in Toadstool
+* Added UI for `contenteditable` new functionality 
+* Updates to `/stipe/stylesheets/stipe/toadstool/ui_patterns/_color_grid.scss`
+	* Added new `extend_color_loop` mixin
+	* Dynamically looping through list of OOCSS names to create color block classes
+
+###0.0.5.5
 * Fixed order of `@imports` in `_manifest.scss`
 
-## 0.0.5.4
+###0.0.5.4
 * Removed Google Font from Toadstool
 
-## 0.0.5.3
+###0.0.5.3
 * Added new feature for hidpi image management
 
-## 0.0.5.2
+###0.0.5.2
 * UI adjustments to `color_palettes` view
 
-## 0.0.5.1
+###0.0.5.1
 * Adding new configutation support for form UI
 
-## 0.0.5.0
+###0.0.5.0
 * Updated stipe manifest to allow for single import

@@ -107,8 +107,13 @@ ol.linenums
   [contenteditable] {
     margin-bottom: em(10);
     padding-left: em(10);
+    cursor: pointer;
     &:focus {
       outline: 1px solid green;
+    }
+    ::selection {
+      color: inherit;
+      background: transparentize(blue, 0.7);
     }
   }
 }
