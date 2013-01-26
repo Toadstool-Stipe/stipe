@@ -13,7 +13,7 @@ Stipe is a Compass Extension, so Compass is set as a depdency. You will need to 
 
 # Stipe Changelog
 ###0.0.5.8(roadmap)
-  toadstool branch: custom_colors / stipe branch: custom_colors
+`toadstool branch: custom_colors / stipe branch: custom_colors`
 * BUG FIX
   * nth-child buttons: need to remove the left margin for mobile breakpoint
 
