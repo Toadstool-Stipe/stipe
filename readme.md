@@ -12,6 +12,9 @@ To use the Stipe gem, using Bundler `gem 'stipe'`
 Stipe is a Compass Extension, so Compass is set as a depdency. You will need to include `require 'stipe'` in your config.rb file.
 
 # Stipe Changelog
+###0.0.5.7.1
+* Added `!optional` flag to Toadstool generated extended placeholder selectors to address backwards compatibility.
+
 ###0.0.5.7
 * Over-hauled color palette CSS
 * Updated forms extends to include `stipe_` in the name to increase visibility of where code is coming from in Toadstool

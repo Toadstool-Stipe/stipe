@@ -71,7 +71,7 @@
   @each $name in $color_names {
     $i: index($color_names, $name);
     .#{$name} {
-      @extend %#{nth($color_names, $i)};
+      @extend %#{nth($color_names, $i)} !optional;
     }
   }
 }
