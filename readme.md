@@ -9,13 +9,18 @@ Stipe is the life blood of the Toadstool style guide framework. Consisting of a 
 ##To use 
 To use the Stipe gem, using Bundler `gem 'stipe'`
 
-Stipe is a Compass Extension, so Compass is set as a depdency. You will need to include `require 'stipe'` in your config.rb file.
+Stipe is a Compass Extension, so Compass is a dependency. You will need to include `require 'stipe'` in your config.rb file.
 
 # Stipe Changelog
 ###0.0.5.8(roadmap)
 `toadstool branch: custom_colors / stipe branch: custom_colors`
 * BUG FIX
   * nth-child buttons: need to remove the left margin for mobile breakpoint
+
+###0.0.5.7.1
+* Added `!optional` flag to Toadstool generated extended placeholder selectors to address backwards compatibility.
+* If Sass still pukes on not finding the placeholders to extend, either the name was updated or simple add `!optional` to the end of the extend declaration.
+	* For the most part this would be restricted to `_buttons.scss` and `_forms.scss` 
 
 ###0.0.5.7
 * Over-hauled color palette CSS
