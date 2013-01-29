@@ -13,7 +13,7 @@ Stipe is a Compass Extension, so Compass is a dependency. You will need to inclu
 
 # Stipe Changelog
 ###0.0.5.8(roadmap)
-`toadstool branch: custom_colors / stipe branch: custom_colors`
+`toadstool branch: 0_1_1 / stipe branch: 0_0_5_8`
 * BUG FIX
   * nth-child buttons: need to remove the left margin for mobile breakpoint
 
