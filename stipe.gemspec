@@ -1,10 +1,6 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-<<<<<<< HEAD
-  s.version = "0.0.5.8"
-=======
-  s.version = "0.0.5.7.1"
->>>>>>> color-palette
+  s.version = "0.0.5.7.2"
   s.date = "2013-01-15"
 
   # Gem Details

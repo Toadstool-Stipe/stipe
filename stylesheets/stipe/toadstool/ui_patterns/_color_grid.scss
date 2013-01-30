@@ -55,7 +55,7 @@
       top: em(-10);
     }
     p {
-      color: white;
+      color: $white;
       left: 0;
       margin: em(10) 0 em(10) em(10);
       line-height: 1.5em;
@@ -165,7 +165,7 @@ echo_color_juliet;
 // ----------------------------------------------
 // Typography, borders, rules and shadows
 $color_names: 
-white 
+'white' 
 primary_header_color 
 primary_text 
 secondary_text href_color

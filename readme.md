@@ -17,6 +17,9 @@ Stipe is a Compass Extension, so Compass is a dependency. You will need to inclu
 * BUG FIX
   * nth-child buttons: need to remove the left margin for mobile breakpoint
 
+###0.0.5.7.2
+* Commonly named color values (aquamarine, white, Crimson, etc) need to be put in `' '` when processed through Rails
+
 ###0.0.5.7.1
 * Added `!optional` flag to Toadstool generated extended placeholder selectors to address backwards compatibility.
 * If Sass still pukes on not finding the placeholders to extend, either the name was updated or simple add `!optional` to the end of the extend declaration.
