@@ -1,6 +1,14 @@
+// Deprecated Notice!
+// Extends that are not prefixed with `stipe_` are deprecated and will be removed from future updates
+
+
 // input fields
 // ------------------------------------------------------------
 %stipe_input_fields {
+  @include input_fields;
+}
+
+%input_fields {
   @include input_fields;
 }
 
@@ -10,9 +18,17 @@
   @include disabled_inputs;
 }
 
-// form labels 
+%disabled_inputs {
+  @include disabled_inputs;
+}
+
+// form labels
 // ------------------------------------------------------------
 %stipe_form_labels {
+  @include form_labels;
+}
+
+%form_labels {
   @include form_labels;
 }
 
@@ -22,9 +38,17 @@
   @include fail;
 }
 
+%fail {
+  @include fail;
+}
+
 // instructional text
 // ------------------------------------------------------------
 %stipe_instructional {
+  @include instructional;
+}
+
+%instructional {
   @include instructional;
 }
 
@@ -34,8 +58,12 @@
   @include inline_alert;
 }
 
+%inline_alert {
+  @include inline_alert;
+}
 
-// notification alerts / panels 
+
+// notification alerts / panels
 // ------------------------------------------------------------
 // these extend need to be refactored for use
 // see mixin as well
@@ -56,7 +84,7 @@
 // these extend need to be refactored for use
 
 
-// form text 
+// form text
 // ------------------------------------------------------------
 // These all need to be refacotred to see if they are really necessary
 // %note {
