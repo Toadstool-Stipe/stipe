@@ -25,4 +25,7 @@ $button-box-shadow: true !default;
   font-weight: $weight;
 }
 
-@import "lib/*";
+@import "lib/flat-default";
+@import "lib/gloss-default";
+@import "lib/shiny-default";
+@import "lib/three-dee";
