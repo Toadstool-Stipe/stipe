@@ -17,6 +17,9 @@ Stipe is a Compass Extension, so Compass is a dependency. You will need to inclu
 * BUG FIX
   * nth-child buttons: need to remove the left margin for mobile breakpoint
 
+###0.0.5.7.3
+* Removed sass-globbing dependency in stipe itself
+
 ###0.0.5.7.2
 * Commonly named color values (aquamarine, white, Crimson, etc) need to be put in `' '` when processed through Rails
 
