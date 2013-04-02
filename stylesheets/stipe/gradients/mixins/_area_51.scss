@@ -22,7 +22,7 @@
 	background: -webkit-linear-gradient(top, $color_values);
 	background: -moz-linear-gradient(top, $color_values);
 	background: -o-linear-gradient(top, $color_values);
-	background: -ms-linear-gradient(top, $color_values);
+	background: linear-gradient(top, $color_values);
 }
 
 
