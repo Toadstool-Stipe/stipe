@@ -17,6 +17,9 @@ Stipe is a Compass Extension, so Compass is a dependency. You will need to inclu
 * BUG FIX
   * nth-child buttons: need to remove the left margin for mobile breakpoint
 
+###0.0.5.7.5
+* Replaced `-ms-linear-gradient(...)` with `linear-gradient(..)` in `linear_gradient_w3c()` mixin.
+
 ###0.0.5.7.4
 * Updated `_forms.scss` to support legacy versions of extends
 
