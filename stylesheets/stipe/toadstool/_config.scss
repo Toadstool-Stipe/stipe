@@ -6,19 +6,19 @@
 ///// Typography configuration /////
 // -----------------------------------------------------------------------------
 // $font_size: 12 !default;
-// 
+//
 $heading_1: 32 !default;
 $heading_2: 24 !default;
 // $heading_3: 28 !default;
 // $heading_4: 18 !default;
 // $heading_5: 18 !default;
 // $heading_6: 18 !default;
-// 
+//
 // $line: $font_size * 1.5 !default;
-// 
+//
 // $small_point_size: 10 !default;
 // $large_point_size: 14 !default;
-// 
+//
 // $primary_font_family: #{"Helvetica Neue", Arial, sans-serif} !default;
 // $secondary_font_family: #{"Helvetica Neue", Arial, sans-serif} !default;
 $heading_font_family: #{'Lato', sans-serif} !default;
@@ -79,7 +79,7 @@ $heading_font_family: #{'Lato', sans-serif} !default;
 // $grid_child:                 none !default;           // sets parent child relationship between grid blocks
 // $grid_align:                 default !default;        // by default grids float left. Optional argument is ``center``
 // $col_base:                   10 !default;             // equal to 10px in the standard 960.gs
-// $col_gutter:                 $col_base * 2 !default;  // sets default grid gutter width                            
+// $col_gutter:                 $col_base * 2 !default;  // sets default grid gutter width
 // $grid_960:                   960 / 100% !default;     // grid math for percentages
 
 
@@ -133,15 +133,15 @@ $heading_font_family: #{'Lato', sans-serif} !default;
 // $input_disabled_bkg:            lighten($input_disabled, 75%) !default;
 // $input_disabled_border:         lighten($input_disabled, 50%) !default;
 // $input_disabled_text:           lighten($input_disabled, 50%) !default;
-//                                 
+//
 // $form_field_background_color:   $white !default;
 // $form_field_focus_color:        $white !default;
 // $form_field_fail_bkg:           $white !default;
-//                                 
+//
 // $form_field_border:             $charlie_gray !default;
 // $form_field_border_fail:        $alpha_color !default;
 // $form_field_focus_border_color: $charlie_gray !default;
-//                                 
+//
 // $form_field_text:               $primary_text !default;
 // $error_text:                    $alpha_color !default;
 // $form_field_fail:               $alpha_color !default;
@@ -206,10 +206,10 @@ $iblur:                                3 !default;                // inset blur 
 // $tablet:                    "screen and (max-width: 64em)" !default;
 // $tablet_portrait:           "screen and (max-width: 50em) and (orientation: portrait)" !default;
 // $tablet_landscape:          "screen and (max-width: 50em) and (orientation: landscape)" !default;
-// 
+//
 // $mobile:                    "screen and (max-width: 30em)" !default;
 // $mobile_portrait:	          "screen and (max-width: 30em) and (orientation : portrait)" !default;
-// $mobile_landscape:	        "screen and (max-width: 30em) and (orientation : landscape)" !default; 
+// $mobile_landscape:	        "screen and (max-width: 30em) and (orientation : landscape)" !default;
 
 
 // Compass function for creating grid background

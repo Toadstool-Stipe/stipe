@@ -27,6 +27,7 @@
 
 // setting default units of measurement for Toadstool grid solution
 // -----------------------------------------------------------------
+$box-sizing:          global !default;
 $grid_type:           12 !default;             // sets default column grid
 $grid_context:        12 !default;             // sets default context of grid width for percentage calculations
 $grid_uom:            percent !default;        // use either ``em`` or ``percent``

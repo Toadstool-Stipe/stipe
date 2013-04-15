@@ -5,7 +5,8 @@
     font-weight: bold;
     @media #{$mobile} {
       @include flexbox(100%, auto, $orient: vertical);
-      @include linear_gradient_w3c ($bravo_gray, #{$bravo_gray 30%,$delta_gray 100%});
+      background-color: $bravo_gray; // Old browsers
+      @include background-image(linear-gradient(top,  $bravo_gray 30%, $delta_gray 100%));
     }
   }
   li {
@@ -26,7 +27,7 @@
   }
   a {
     color: $white;
-    @include linear_gradient_w3c ($bravo_gray, #{$bravo_gray 50%,$delta_gray 100%}); 
+    @include linear_gradient_w3c ($bravo_gray, #{$bravo_gray 50%,$delta_gray 100%});
     .no-flexbox & {
       padding: 0 em(10);
     }

@@ -11,18 +11,20 @@
 
 // Following sequence will load the necessary Stipe libraries
 // ------------------------------------------------------------------------------
+@import "compass/css3";
+
 @import "stipe/media";
-@import "stipe/stipe";                   
+@import "stipe/stipe";
 @import "stipe/media";
-@import "stipe/typography";             
-@import "stipe/grid";      
-@import "stipe/forms";               
-@import "stipe/color";                   
-@import "stipe/gradients"; 
-               
+@import "stipe/typography";
+@import "stipe/grid";
+@import "stipe/forms";
+@import "stipe/color";
+@import "stipe/gradients";
 
 
-// This where you start building your own styles. 
+
+// This where you start building your own styles.
 // ------------------------------------------------------------------------------
 @import "typography";
 @import "design";

@@ -4,6 +4,7 @@
 
 
 @import "../color/default_color_palette";
+@import "../stipe/mixins";
 
 
 // *-------------------------------------------------------------------------------
@@ -11,13 +12,13 @@
 // *	HTML5 Reset :: style.css
 // *	----------------------------------------------------------
 // *	We have learned much from/been inspired by/taken code where offered from:
-// *	
+// *
 // *	Eric Meyer					:: http://ericmeyer.com
 // *	HTML5 Doctor				:: http://html5doctor.com
 // *	and the HTML5 Boilerplate	:: http://html5boilerplate.com
-// *	
+// *
 // *	Mods by Dale Sande			:: toadstool awesome
-// *	
+// *
 // *-------------------------------------------------------------------------------
 
 
@@ -28,13 +29,15 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	margin: 0;
 	padding: 0;
 	border: 0;
-	//outline: 0;
 	vertical-align: baseline;
 	background: transparent;
 }
 
+* {
+  @include box-sizing;
+}
+
 body {
-	//line-height: 1;
 	font-size: 100%;
 	-webkit-font-smoothing: antialiased;
 }
@@ -44,7 +47,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
 }
 
 // * Responsive images and other embedded objects
-// * Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers. 
+// * Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers.
 // * There has been a report of problems with standard Google maps as well, but we haven't been able to duplicate or diagnose the issue.
 
 img, object, embed {
@@ -57,7 +60,7 @@ img {
 	border-width: 0;
 }
 
-// * we use a lot of ULs that aren't bulleted. 
+// * we use a lot of ULs that aren't bulleted.
 // * don't forget to restore the bullets within content.
 
 ol,ul {
@@ -201,7 +204,7 @@ mark {
 	font-style: italic;
 	font-weight: bold;
 }
-	
+
 ::selection {
 	background: $selection_color;
 	color: $selection_text_color;
