@@ -26,8 +26,26 @@
 // grid ----------------------
 @for $i from 1 through 12 {
   .grid-#{$i} {
-    @extend %grid_#{$i};
+    @extend %grid_#{$i}of12;
     @extend %grid_display;
+  }
+}
+
+// @media #{$mobile} {
+//   @for $i from 1 through 4 {
+//     .grid-#{$i} {
+//       @extend %grid_#{$i}of4;
+//       @extend %grid_display_mobile;
+//     }
+//   }
+// }
+
+@media #{$tablet_portrait} {
+  @for $i from 1 through 9 {
+    .grid-#{$i} {
+      @extend %grid_#{$i}of9;
+      @extend %grid_display_tablet;
+    }
   }
 }
 
