@@ -47,16 +47,6 @@
   }
 }
 
-// 24 col Nested grids -----------------------------
-@for $v from 1 through 24 {
-  @for $i from 1 through $v {
-    %grid_#{$i}of#{$v}_nested {
-      @include grid($i, $grid_context: $v);
-    }
-  }
-}
-
-
 
 
 // push ----------------------
@@ -134,6 +124,17 @@
   @for $i from 9 through 24 {
     %grid_#{$i}of8 {
       @include grid(8, $grid_context: 8);
+    }
+  }
+}
+
+
+
+// 24 col Nested grids -----------------------------
+@for $v from 1 through 24 {
+  @for $i from 1 through $v {
+    %grid24_#{$i}of#{$v}_nested {
+      @include grid($i, $grid_context: $v);
     }
   }
 }

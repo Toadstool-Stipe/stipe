@@ -12,6 +12,9 @@ To use the Stipe gem, using Bundler `gem 'stipe'`
 Stipe is a Compass Extension, so Compass is a dependency. You will need to include `require 'stipe'` in your config.rb file.
 
 # Stipe Changelog
+###0.0.5.7.9
+* BUG FIX - Addressed duplicate output for 12 col and 24 col nested placeholder selectors
+
 ###0.0.5.7.8
 * ALERT!!!! Deprecated Stipe's gradient support. This code will be deleted in future releases. Please make sure to update all gradients to use Compass' `@include background-image` mixin
 * Grids have been updated to support a larger array of placeholder classes for both 12 col and 24 col grid layouts.
