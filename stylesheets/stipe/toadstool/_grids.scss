@@ -63,17 +63,9 @@
   }
 }
 
-.grid-full {
-	@include full_width_block(12, $main_grid_align: left);
-}
-
-.grid-full_center {
-	@include full_width_block(12);
-}
 
 
-
-// 12 col grid support --------------------
+// 24 col grid support --------------------
 @for $i from 1 through 24 {
   .grid-#{$i}-24 {
     @extend %grid_#{$i}of24;

@@ -35,17 +35,28 @@
     }
   }
 }
-// -------------------------------------
 
 
 
-%grid_full {
-  @include full_width_block(12, $main_grid_align: left);
+// 12 col Nested grids -----------------------------
+@for $v from 1 through 12 {
+  @for $i from 1 through $v {
+    %grid_#{$i}of#{$v}_nested {
+      @include grid($i, $grid_context: $v);
+    }
+  }
 }
 
-%grid_full_center {
-  @include full_width_block(12);
+// 24 col Nested grids -----------------------------
+@for $v from 1 through 24 {
+  @for $i from 1 through $v {
+    %grid_#{$i}of#{$v}_nested {
+      @include grid($i, $grid_context: $v);
+    }
+  }
 }
+
+
 
 
 // push ----------------------
@@ -125,4 +136,13 @@
       @include grid(8, $grid_context: 8);
     }
   }
+}
+
+// Standard layout ----------------------------
+%grid_full {
+  @include full_width_block(12, $main_grid_align: left);
+}
+
+%grid_full_center {
+  @include full_width_block(12);
 }
