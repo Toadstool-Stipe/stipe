@@ -1,13 +1,15 @@
-// Toadstool core v0.0.0.1
-// This document is not to be edited as it will be versioned
-// -----------------------------------------------------------------
+// Code is depricated!
+// ALERT!!!!!!!!!!!
+// In future releases of Stipe, all references to this document will be deleted and all gradient support moved over to Compass
+
+// ----------------------------------------------------------------------
 
 
 // The following gradients are designed with variable color stops and supports background images
 // It is recommended to use these to build reusable objects in the SCSS
 // -------------------------------------------------------------------------------------
-// four color stop linear gradient with color stops and images set as variable 
-// --------------------------------------------------------------- 
+// four color stop linear gradient with color stops and images set as variable
+// ---------------------------------------------------------------
 // NOTE:  Place url path on single quotes, i.e. '../../images/image.png'
 
 @mixin linear_gradient_bkgimage ($image, $position, $start_color, $color_values, $prefixes: $prefix_defaults) {
@@ -30,7 +32,7 @@
 
 // requires that color values are written using #{} interpolation syntax
 // example .....
-// @include linear_gradient_bkgimage_legacy_safari (#{color-stop(0%,$alpha_color), color-stop(100%,$bravo_color)}); 
+// @include linear_gradient_bkgimage_legacy_safari (#{color-stop(0%,$alpha_color), color-stop(100%,$bravo_color)});
 // ---------------------------------------------------------------------------------------
 // NOTE:  Place url path on single quotes, i.e. '../../images/image.png'
 @mixin linear_gradient_bkgimage_legacy_safari ($image, $position, $color_values) {
