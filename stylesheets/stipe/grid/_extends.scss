@@ -3,31 +3,7 @@
 // Preferred uses include @extend .class; or repurpose the mixin within the class.
 //
 
-// grid ----------------------
-@mixin grid_display {
-  margin-bottom: 1em;
-  text-align: center;
-  padding: em(10) 0;
-  @include box_shadow (inset $shadow_color, 0 0 em(20) em(10));
-}
-
-%grid_display {
-  @include grid_display
-}
-
-@media #{$tablet_portrait} {
-  %grid_display_tablet {
-    @include grid_display
-  }
-}
-
-@media #{$mobile} {
-  %grid_display_mobile {
-    @include grid_display
-  }
-}
-
-// -------------------------------------
+// 12 col grid support --------------------
 @for $i from 1 through 12 {
   %grid_#{$i}of12 {
     @include grid($i, $grid_context: 12);
@@ -35,9 +11,14 @@
 }
 
 @media #{$tablet_portrait} {
-  @for $i from 1 through 9 {
-    %grid_#{$i}of9 {
-      @include grid($i, $grid_context: 9);
+  @for $i from 1 through 10 {
+    %grid_#{$i}of10 {
+      @include grid($i, $grid_context: 10);
+    }
+  }
+  @for $i from 11 through 12 {
+    %grid_#{$i}of10 {
+      @include grid(10, $grid_context: 10);
     }
   }
 }
@@ -46,6 +27,11 @@
   @for $i from 1 through 4 {
     %grid_#{$i}of4 {
       @include grid($i, $grid_context: 4);
+    }
+  }
+  @for $i from 5 through 12 {
+    %grid_#{$i}of4 {
+      @include grid(4, $grid_context: 4);
     }
   }
 }
@@ -61,12 +47,6 @@
   @include full_width_block(12);
 }
 
-// 24 col grid support --------------------
-@for $i from 1 through 24 {
-  %grid_#{$i}_24 {
-    @include grid($i, $grid_type:24);
-  }
-}
 
 // push ----------------------
 @for $i from 1 through 12 {
@@ -104,11 +84,45 @@
 }
 
 // alpha / omega ----------------------
-
 %alpha {
   @include alpha;
 }
 
 %omega {
   @include omega;
+}
+
+
+
+// 24 col grid support --------------------
+@for $i from 1 through 24 {
+  %grid_#{$i}of24 {
+    @include grid($i, $grid_context: 24);
+  }
+}
+
+@media #{$tablet_portrait} {
+  @for $i from 1 through 19 {
+    %grid_#{$i}of19 {
+      @include grid($i, $grid_context: 19);
+    }
+  }
+  @for $i from 20 through 24 {
+    %grid_#{$i}of19 {
+      @include grid(19, $grid_context: 19);
+    }
+  }
+}
+
+@media #{$mobile} {
+  @for $i from 1 through 8 {
+    %grid_#{$i}of8 {
+      @include grid($i, $grid_context: 8);
+    }
+  }
+  @for $i from 9 through 24 {
+    %grid_#{$i}of8 {
+      @include grid(8, $grid_context: 8);
+    }
+  }
 }
