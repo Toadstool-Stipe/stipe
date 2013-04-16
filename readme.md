@@ -1,4 +1,4 @@
-#Stipe Compass Extension
+e#Stipe Compass Extension
 Stipe is the life blood of the Toadstool style guide framework. Consisting of a series of mixins, extends and defaults that give Toadstool that 'instant on' experience.
 
 [Stipe](https://rubygems.org/gems/stipe)
@@ -12,12 +12,12 @@ To use the Stipe gem, using Bundler `gem 'stipe'`
 Stipe is a Compass Extension, so Compass is a dependency. You will need to include `require 'stipe'` in your config.rb file.
 
 # Stipe Changelog
-###0.0.5.8(roadmap)
-`toadstool branch: 0_1_1 / stipe branch: 0_0_5_8`
-* BUG FIX
-  * nth-child buttons: need to remove the left margin for mobile breakpoint
+###0.0.5.7.8
+* ALERT!!!! Deprecated Stipe's gradient support. This code will be deleted in future releases. Please make sure to update all gradients to use Compass' `@include background-image` mixin
+* Grids have been updated to support a larger array of placeholder classes for both 12 col and 24 col grid layouts.
+* New experimental support for placeholder selectors and nested grids
 
-###0.0.5.7.6
+###0.0.5.7.7
 * Update grid - move box-sizing from grid scope to global attribute
 * Deprecate Stipe's grid solution in favor of using Compass
 
