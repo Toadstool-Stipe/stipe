@@ -12,6 +12,9 @@ To use the Stipe gem, using Bundler `gem 'stipe'`
 Stipe is a Compass Extension, so Compass is a dependency. You will need to include `require 'stipe'` in your config.rb file.
 
 # Stipe Changelog
+###0.0.5.8
+* Move grid extends to load last in style.scss manifest - when using the extended grid solution, this will move all your media queries to the end of the stylesheet.
+
 ###0.0.5.7.9
 * BUG FIX - Addressed duplicate output for 12 col and 24 col nested placeholder selectors
 
@@ -56,21 +59,3 @@ Stipe is a Compass Extension, so Compass is a dependency. You will need to inclu
 *  New `extend_color_loop` mixin
 	* Added to `/stipe/stylesheets/stipe/toadstool/ui_patterns/_color_grid.scss`
 	* All extends generated in memory from lists of objects
-
-###0.0.5.5
-* Fixed order of `@imports` in `_manifest.scss`
-
-###0.0.5.4
-* Removed Google Font from Toadstool
-
-###0.0.5.3
-* Added new feature for hidpi image management
-
-###0.0.5.2
-* UI adjustments to `color_palettes` view
-
-###0.0.5.1
-* Adding new configutation support for form UI
-
-###0.0.5.0
-* Updated stipe manifest to allow for single import
