@@ -12,6 +12,9 @@ To use the Stipe gem, using Bundler `gem 'stipe'`
 Stipe is a Compass Extension, so Compass is a dependency. You will need to include `require 'stipe'` in your config.rb file.
 
 # Stipe Changelog
+###0.0.5.8.1
+* Updated `@clearfix` to remove redundant CSS output
+
 ###0.0.5.8
 * Move grid extends to load last in style.scss manifest - when using the extended grid solution, this will move all your media queries to the end of the stylesheet.
 * Removed support for Font-Awesome and Zocial ico-fonts
