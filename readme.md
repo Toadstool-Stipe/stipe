@@ -14,6 +14,9 @@ Stipe is a Compass Extension, so Compass is a dependency. You will need to inclu
 # Stipe Changelog
 ###0.0.5.8
 * Move grid extends to load last in style.scss manifest - when using the extended grid solution, this will move all your media queries to the end of the stylesheet.
+* Removed support for Font-Awesome and Zocial ico-fonts
+* Replaced with new and improved "build your own" ico-font solution
+* General bug fixes
 
 ###0.0.5.7.9
 * BUG FIX - Addressed duplicate output for 12 col and 24 col nested placeholder selectors
