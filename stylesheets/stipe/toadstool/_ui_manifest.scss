@@ -33,3 +33,7 @@
 @import "grids";
 @import "ui_patterns";
 @import "modules";
+
+// Stipe grid extends need to load last
+// ------------------------------------------------------------------------------
+@import "stipe/grid/extends";

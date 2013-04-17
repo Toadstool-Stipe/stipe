@@ -15,10 +15,6 @@
 				$margin_calc: #{$margin / $em}em;
 				@include grid_margin($grid_child, $margin_calc);
 			}
-			// @else if $grid_uom == combo {
-			// 	$margin_calc: #{$margin / $em}em;
-			// 	@include grid_margin($grid_child, $margin_calc);
-			// }
 			@else if $grid_uom == percent {
 				$margin_calc: $margin / $grid_context_width * 100%;
 				@include grid_margin($grid_child, $margin_calc);
@@ -30,10 +26,6 @@
 				$margin_calc: #{$margin / $em}em;
 				@include grid_margin($grid_child, $margin_calc);
 			}
-			// @else if $grid_uom == combo {
-			// 	$margin_calc: #{$margin / $em}em;
-			// 	@include grid_margin($grid_child, $margin_calc);
-			// }
 			@else if $grid_uom == percent {
 				$margin_calc: $margin / $grid_context_width * 100%;
 				@include grid_margin($grid_child, $margin_calc);
@@ -45,10 +37,6 @@
 				$margin_calc: #{$margin / $em}em;
 				@include grid_margin($grid_child, $margin_calc);
 			}
-			// @else if $grid_uom == combo {
-			// 	$margin_calc: #{$margin / $em}em;
-			// 	@include grid_margin($grid_child, $margin_calc);
-			// }
 			@else if $grid_uom == percent {
 				$margin_calc: $margin / $grid_context_width * 100%;
 				@include grid_margin($grid_child, $margin_calc);
