@@ -17,11 +17,17 @@
 		@media #{$mobile} {
 			display: block;
 			width: auto;
-			padding: rem(15) rem(10) rem(10) rem(10);
+      line-height: 1em;
+			padding: {
+        top: rem(15);
+        left: rem(10);
+        right: rem(10);
+        bottom: rem(10);
+      }
 			font-weight: normal;
 			span {
 				&:after {
-					content: "\f00b";
+					content: "\e001";
 					font-family: $icon_font_alpha;
 					font-size: 2em;
 				}
