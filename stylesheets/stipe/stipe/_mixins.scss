@@ -274,6 +274,9 @@ $legacyPrefixes: $moz_webkit_support) {
     height: 0;
     overflow: hidden;
   }
+  &:after {
+    clear: both;
+  }
 }
 /////// clearfix //////////
 
