@@ -14,7 +14,6 @@
     margin: em(-10) 0 0 em(-10);
   }
   div {
-    @include box_sizing; 
     text-align: center;
     float: left;
     font-weight: bold;

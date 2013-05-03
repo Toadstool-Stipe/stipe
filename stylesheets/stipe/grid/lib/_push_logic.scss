@@ -32,7 +32,6 @@
 			right: ($width_gutter * $col_count) / $grid_960;
 		}
 	}
-	@include box_sizing(content-box);
 }
 
 
