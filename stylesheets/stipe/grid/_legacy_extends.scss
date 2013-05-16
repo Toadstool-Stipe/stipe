@@ -119,3 +119,47 @@
     @extend %grid_4of4;
   }
 }
+
+
+@media #{$mobile} {
+  %grid_full_mobile {
+    /* grid_full_mobile */
+    @include full_width_block(12, $main_grid_align: left);
+  }
+}
+@media #{$mobile_portrait} {
+  %grid_full_mobile_portrait {
+    /* grid_full_mobile_portrait */
+    @include full_width_block(12, $main_grid_align: left);
+  }
+}
+@media #{$mobile_landscape}	{
+  %grid_full_mobile_landscape {
+    /* grid_full_mobile_landscape */
+    @include full_width_block(12, $main_grid_align: left);
+  }
+}
+@media #{$tablet} {
+  %grid_full_tablet {
+    /* grid_full_tablet */
+    @include full_width_block(12, $main_grid_align: left);
+  }
+}
+@media #{$tablet_portrait} {
+  %grid_full_tablet_portrait {
+    /* grid_full_tablet_portrait */
+    @include full_width_block(12, $main_grid_align: left);
+  }
+}
+@media #{$tablet_landscape} {
+  %grid_full_tablet_landscape {
+    /* grid_full_tablet_landscape */
+    @include full_width_block(12, $main_grid_align: left);
+  }
+}
+@media #{$desktop} {
+  %grid_full_desktop {
+    /* grid_full_mobile */
+    @include full_width_block(12, $main_grid_align: left);
+  }
+}
