@@ -1,4 +1,4 @@
-e#Stipe Compass Extension
+#Stipe Compass Extension
 Stipe is the life blood of the Toadstool style guide framework. Consisting of a series of mixins, extends and defaults that give Toadstool that 'instant on' experience.
 
 [Stipe](https://rubygems.org/gems/stipe)
