@@ -69,16 +69,7 @@ ol,ul {
 
 blockquote, q {
 	quotes: none;
-}
-
-blockquote {
-	&:before, &:after {
-		content: '';
-		content: none;
-	}
-}
-
-q {
+	
 	&:before, &:after {
 		content: '';
 		content: none;
@@ -133,16 +124,13 @@ table {
 	font: 100%;
 }
 
-sub {
+sub, sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
 }
 
 sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
 	top: -0.5em;
 }
 
@@ -157,14 +145,18 @@ pre, code, kbd, samp {
 }
 
 // * hand cursor on clickable elements
+%stipe-cursor-pointer {
+  cursor: pointer;
+}
+
 
 .clickable, label {
-	cursor: pointer;
+	@extend %stipe-cursor-pointer;
 }
 
 input {
 	&[type=button], &[type=submit] {
-		cursor: pointer;
+		@extend %stipe-cursor-pointer;
 	}
 }
 
