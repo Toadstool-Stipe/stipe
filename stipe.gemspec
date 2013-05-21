@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "0.0.5.9"
-  s.date = "2013-05-03"
+  s.version = "0.0.6.0"
+  s.date = "2013-05-21"
 
   # Gem Details
   s.name = "stipe"
@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.summary = %q{Core styles for Toadstool}
   s.description = %q{Core styles for the Toadstool styleguide app.}
   s.email = "dale.sande@gmail.com"
-  s.homepage = "https://github.com/Anotheruiguy/stipe"
+  s.homepage = "https://github.com/Toadstool-Stipe/stipe"
 
   # Gem Files
   s.files = %w(readme.md)

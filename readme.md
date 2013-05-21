@@ -12,8 +12,10 @@ To use the Stipe gem, using Bundler `gem 'stipe'`
 Stipe is a Compass Extension, so Compass is a dependency. You will need to include `require 'stipe'` in your config.rb file.
 
 # Stipe Changelog
-###0.0.5.9.1
-* Updated `@clearfix` to remove redundant CSS output
+###0.0.6.0
+* Updated `@clearfix` to remove redundant CSS output.
+* Added some additional @media query-scoped grid placeholders.
+* Updated gem homepage.
 
 ###0.0.5.9
 * Removed uneccessary instances of the box-sizing mixin, namely, in the push/pull mixins.
