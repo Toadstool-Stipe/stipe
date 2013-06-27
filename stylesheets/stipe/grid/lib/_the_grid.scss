@@ -7,7 +7,7 @@
   $col_gutter_width: ($col_count - 1) * $col_gutter + ($col_count * $col_width);
 
   // determines width of contextual grid block for calculating percentages
-  $grid_context_width: $grid_context * 80;
+  $grid_context_width: $grid_context * ($col_width + $col_gutter);
 
   $grid_padding_lr: $grid_padding_l + $grid_padding_r;
 

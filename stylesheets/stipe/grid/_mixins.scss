@@ -7,7 +7,7 @@
 // Do not enter combination values such as '36em'
 
 $border_place: '';
-@mixin grid($col_count, $grid_child: $grid_child, $grid_padding_l: $grid_padding_l, $grid_padding_r: $grid_padding_r, $grid_padding_tb: $grid_padding_tb, $grid_border: $grid_border, $grid_uom: $grid_uom, $col_gutter: $col_gutter, $grid_type: $grid_type, $grid_align: $grid_align, $grid_context: $grid_context, $border_color: $border_color, $border_place: $border_place) {
+@mixin grid($col_count, $grid_child: $grid_child, $grid_padding_l: $grid_padding_l, $grid_padding_r: $grid_padding_r, $grid_padding_tb: $grid_padding_tb, $grid_border: $grid_border, $grid_uom: $grid_uom, $col_gutter: $col_gutter, $grid_type: $grid_type, $grid_align: $grid_align, $grid_context: $grid_type, $border_color: $border_color, $border_place: $border_place) {
 
 	@if $grid_type == 12 {
 		$col_width: 80 - $col_gutter;
