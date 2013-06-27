@@ -12,6 +12,10 @@ To use the Stipe gem, using Bundler `gem 'stipe'`
 Stipe is a Compass Extension, so Compass is a dependency. You will need to include `require 'stipe'` in your config.rb file.
 
 # Stipe Changelog
+
+###0.0.6.1
+* Tweak `the_grid` to work with 24 column default setting
+
 ###0.0.6.0
 * Updated `@clearfix` to remove redundant CSS output.
 * Added some additional @media query-scoped grid placeholders.
