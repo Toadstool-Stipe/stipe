@@ -150,7 +150,7 @@ pre, code, kbd, samp {
 }
 
 
-.clickable, label {
+.clickable {
 	@extend %stipe-cursor-pointer;
 }
 
