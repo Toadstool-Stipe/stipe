@@ -33,30 +33,30 @@ $border_place: '';
 
 ///////// prefix value accounts for a full column in the grid ////////////
 // -----------------------------------------------------------------------
-@mixin prefix($grid_type, $col_count, $grid_uom: $grid_uom, $move: prefix) {
-	@include ppps ($grid_type, $col_count, $grid_uom, $move);
+@mixin prefix($grid_type, $col_count, $grid_uom: $grid_uom, $grid_context: $grid_type, $move: prefix) {
+	@include ppps ($grid_type, $col_count, $grid_uom, $move, $grid_context);
 }
 
 ///////// suffix value accounts for a full column in the grid ////////////
 // -----------------------------------------------------------------------
 
-@mixin suffix($grid_type, $col_count, $grid_uom: $grid_uom, $move: suffix) {
-	@include ppps ($grid_type, $col_count, $grid_uom, $move);
+@mixin suffix($grid_type, $col_count, $grid_uom: $grid_uom, $grid_context: $grid_type, $move: suffix) {
+	@include ppps ($grid_type, $col_count, $grid_uom, $move, $grid_context);
 }
 
 ///////// push value accounts for a full column in the grid ////////////
 // -----------------------------------------------------------------------
 
-@mixin push($grid_type, $col_count, $grid_uom: $grid_uom, $move: push) {
-	@include ppps ($grid_type, $col_count, $grid_uom, $move);
+@mixin push($grid_type, $col_count, $grid_uom: $grid_uom, $grid_context: $grid_type, $move: push) {
+	@include ppps ($grid_type, $col_count, $grid_uom, $move, $grid_context);
 	position: relative;
 }
 
 ///////// pull value accounts for a full column in the grid ////////////
 // -----------------------------------------------------------------------
 
-@mixin pull($grid_type, $col_count, $grid_uom: $grid_uom, $move: pull) {
-	@include ppps ($grid_type, $col_count, $grid_uom, $move);
+@mixin pull($grid_type, $col_count, $grid_uom: $grid_uom, $grid_context: $grid_type, $move: pull) {
+	@include ppps ($grid_type, $col_count, $grid_uom, $move, $grid_context);
 	position: relative;
 }
 
