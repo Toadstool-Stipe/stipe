@@ -13,6 +13,9 @@ Stipe is a Compass Extension, so Compass is a dependency. You will need to inclu
 
 # Stipe Changelog
 
+###0.0.6.2
+* Make `push`/`pull` grid mixins accept context arguments. Useful for nested, percentage-based grids.
+
 ###0.0.6.1
 * Tweak `the_grid` to work with 24 column default setting
 
