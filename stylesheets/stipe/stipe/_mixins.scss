@@ -86,7 +86,7 @@ $inset_shadow: em($ih-shadow) em($iv-shadow) em($iblur) em($is-shadow);
   &::-webkit-input-placeholder {
     color: $placeholder_color;
   }
-  &:-moz-placeholder {
+  &::-moz-placeholder {
     color: $placeholder_color;
   }
   &:-ms-input-placeholder {
@@ -94,28 +94,6 @@ $inset_shadow: em($ih-shadow) em($iv-shadow) em($iblur) em($is-shadow);
   }
 }
 /////// input_placeholder arguments /////////
-
-
-
-////////// style placeholder text //////////
-// deprecation alert!!!! this mixin will be deleted in future releases //
-@mixin placeholder_styles ($color: $placeholder_text) {
-  color: $color;
-}
-
-@mixin placeholder ($color) {
-  &::-webkit-input-placeholder {
-    @include placeholder_styles ($color);
-  }
-  &:-moz-placeholder {
-    @include placeholder_styles ($color);
-  }
-  &:-ms-input-placeholder {
-    @include placeholder_styles ($color);
-  }
-}
-// deprecation alert!!!! this mixin will be deleted in future releases //
-////////// style placeholder text //////////
 
 
 
