@@ -27,7 +27,6 @@
 }
 
 
-
 //////// standard text mixins //////////
 // ------------------------------------------------
 @mixin small ($baseline_size: $small_point_size) {
@@ -41,8 +40,6 @@
 @mixin large ($baseline_size: $large_point_size) {
   @include text($baseline_size);
 }
-
-
 
 
 ////////// Standard bulleted list //////////////

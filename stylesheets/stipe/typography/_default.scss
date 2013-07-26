@@ -50,14 +50,10 @@ b {
   }
 }
 
-
-// :link Pseudo-class is totally not necessary as I can tell
-// code here to combat legacy code
 a {
-  &:link {
-    color: $href_color;
-    text-decoration: none;
-  }
+  color: $href_color;
+  text-decoration: none;
+
   &:hover, &:active {
     text-decoration: underline;
   }

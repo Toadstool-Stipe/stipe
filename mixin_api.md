@@ -1,5 +1,5 @@
 #Stipe Mixin API reference list
-In Stipe there are a vast number of pre-defined Mixins that you as a user can take advantage of to write leaner, meaner and quicker CSS. 
+In Stipe there are a vast number of pre-defined mixins that you as a user can take advantage of to write leaner, meaner and quicker CSS. 
 
 ##Forms
 [input_fields($height, $padding, $font-size)](http://goo.gl/HTzRH)

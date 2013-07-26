@@ -26,7 +26,7 @@ if you care ...
 
 ## 0.0.3.7
 * Updates to Toadstool nav and grid display for legacy browsers
-* Updates to flexbox to support legacy and new based on current support
+* Updates to Flexbox to support legacy and new based on current support
 
 ## 0.0.3.5
 * Updated code blocks to be 100% of view versus two columns by default
@@ -35,7 +35,7 @@ if you care ...
 * Updated default text to have text-adjust set to none.
 
 ## 0.0.3.3
-* Updates to grid soluiton for legacy browser support
+* Updates to grid solution for legacy browser support
 
 ## 0.0.3.2
 * Updates to how default color extends are created in `toadstool.css`
@@ -44,7 +44,7 @@ if you care ...
 
 ## 0.0.2.8/0.0.2.9
 * Updated Toadstool Sass to use better named spaced class for main content block. 
-** Changed .main_content to .toadstool_main_contnet
+** Changed `.main_content` to `.toadstool_main_content`
 
 ## 0.0.2.7
 * Sass and UI work related to default form views
@@ -52,7 +52,7 @@ if you care ...
 ## 0.0.2.6
 * Created color views in Toadstool
 * Created remaining semantic color variables silent classes
-* Updated Toadstool `_design / _ui_manifest.scss` 
+* Updated Toadstool `_design/_ui_manifest.scss` 
 
 ## < 0.0.2.6
 * I really have no idea ...

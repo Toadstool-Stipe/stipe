@@ -4,5 +4,5 @@ In your Toadstool style guide, `style.scss` calls in local `_config.scss`. Local
 
 `color/color_math` imports `stipe/color/default_color_pallet` to ensure that un-updated default values are carried forward. 
 
-In your Toadstool style guide`toadstool.scss` imports `color/extends.scss` from the local style guide so that the extends have the correct color reference. But it is in `stipe/toadstool/ui_patterns/_color_grid.scss` where these extended values are given classes that only appear in the `toadstool.css`. This principle is needed so that the site's extends will create colors from the appropiate context and the presentational classes only live in the `toadstool.css` doc.  
+In your Toadstool style guide`toadstool.scss` imports `color/extends.scss` from the local style guide so that the extends have the correct color reference. But it is in `stipe/toadstool/ui_patterns/_color_grid.scss` where these extended values are given classes that only appear in the `toadstool.css`. This principle is needed so that the site's extends will create colors from the appropriate context and the presentational classes only live in the `toadstool.css` doc.  
 
