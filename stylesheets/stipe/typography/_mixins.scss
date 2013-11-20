@@ -22,7 +22,10 @@
     margin-bottom: baseline-margin($baseline_size);
   }
   @else if $margin == 0 {
-    margin-bottom: 0;
+    // no op
+  }
+  @else {
+    margin-bottom: em($margin);
   }
 }
 
