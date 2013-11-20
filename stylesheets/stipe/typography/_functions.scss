@@ -11,7 +11,7 @@
 // Baseline height calculations 
 // line-height: baseline($baseline_size);
 @function baseline($baseline_size) {
-  @return ($line / $baseline_size) * ceil($baseline_size / $line) * 1em;
+  @return ($line / $baseline_size) * ceil($baseline_size / $line) * 1;
 }
 
 // Baseline margin calculations 
